@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB8041331E530CE100C451F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041321E530CE100C451F0 /* AppDelegate.swift */; };
+		CB8041351E530CE100C451F0 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041341E530CE100C451F0 /* MasterViewController.swift */; };
+		CB8041371E530CE100C451F0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041361E530CE100C451F0 /* DetailViewController.swift */; };
+		CB80413A1E530CE200C451F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8041381E530CE200C451F0 /* Main.storyboard */; };
+		CB80413C1E530CE200C451F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB80413B1E530CE200C451F0 /* Assets.xcassets */; };
+		CB80413F1E530CE200C451F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB80413D1E530CE200C451F0 /* LaunchScreen.storyboard */; };
+		CB80414A1E530CE200C451F0 /* AutoVPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041491E530CE200C451F0 /* AutoVPNTests.swift */; };
+		CB8041551E530CE200C451F0 /* AutoVPNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041541E530CE200C451F0 /* AutoVPNUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB8041461E530CE200C451F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB8041271E530CE100C451F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB80412E1E530CE100C451F0;
+			remoteInfo = AutoVPN;
+		};
+		CB8041511E530CE200C451F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB8041271E530CE100C451F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB80412E1E530CE100C451F0;
+			remoteInfo = AutoVPN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB80412F1E530CE100C451F0 /* AutoVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8041321E530CE100C451F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB8041341E530CE100C451F0 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		CB8041361E530CE100C451F0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CB8041391E530CE200C451F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB80413B1E530CE200C451F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB80413E1E530CE200C451F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB8041401E530CE200C451F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB8041451E530CE200C451F0 /* AutoVPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoVPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8041491E530CE200C451F0 /* AutoVPNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoVPNTests.swift; sourceTree = "<group>"; };
+		CB80414B1E530CE200C451F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB8041501E530CE200C451F0 /* AutoVPNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoVPNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8041541E530CE200C451F0 /* AutoVPNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoVPNUITests.swift; sourceTree = "<group>"; };
+		CB8041561E530CE200C451F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB80412C1E530CE100C451F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8041421E530CE200C451F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB80414D1E530CE200C451F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB8041261E530CE100C451F0 = {
+			isa = PBXGroup;
+			children = (
+				CB8041311E530CE100C451F0 /* AutoVPN */,
+				CB8041481E530CE200C451F0 /* AutoVPNTests */,
+				CB8041531E530CE200C451F0 /* AutoVPNUITests */,
+				CB8041301E530CE100C451F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB8041301E530CE100C451F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB80412F1E530CE100C451F0 /* AutoVPN.app */,
+				CB8041451E530CE200C451F0 /* AutoVPNTests.xctest */,
+				CB8041501E530CE200C451F0 /* AutoVPNUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB8041311E530CE100C451F0 /* AutoVPN */ = {
+			isa = PBXGroup;
+			children = (
+				CB8041321E530CE100C451F0 /* AppDelegate.swift */,
+				CB8041341E530CE100C451F0 /* MasterViewController.swift */,
+				CB8041361E530CE100C451F0 /* DetailViewController.swift */,
+				CB8041381E530CE200C451F0 /* Main.storyboard */,
+				CB80413B1E530CE200C451F0 /* Assets.xcassets */,
+				CB80413D1E530CE200C451F0 /* LaunchScreen.storyboard */,
+				CB8041401E530CE200C451F0 /* Info.plist */,
+			);
+			path = AutoVPN;
+			sourceTree = "<group>";
+		};
+		CB8041481E530CE200C451F0 /* AutoVPNTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB8041491E530CE200C451F0 /* AutoVPNTests.swift */,
+				CB80414B1E530CE200C451F0 /* Info.plist */,
+			);
+			path = AutoVPNTests;
+			sourceTree = "<group>";
+		};
+		CB8041531E530CE200C451F0 /* AutoVPNUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB8041541E530CE200C451F0 /* AutoVPNUITests.swift */,
+				CB8041561E530CE200C451F0 /* Info.plist */,
+			);
+			path = AutoVPNUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB80412E1E530CE100C451F0 /* AutoVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB8041591E530CE200C451F0 /* Build configuration list for PBXNativeTarget "AutoVPN" */;
+			buildPhases = (
+				CB80412B1E530CE100C451F0 /* Sources */,
+				CB80412C1E530CE100C451F0 /* Frameworks */,
+				CB80412D1E530CE100C451F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoVPN;
+			productName = AutoVPN;
+			productReference = CB80412F1E530CE100C451F0 /* AutoVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB8041441E530CE200C451F0 /* AutoVPNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB80415C1E530CE200C451F0 /* Build configuration list for PBXNativeTarget "AutoVPNTests" */;
+			buildPhases = (
+				CB8041411E530CE200C451F0 /* Sources */,
+				CB8041421E530CE200C451F0 /* Frameworks */,
+				CB8041431E530CE200C451F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB8041471E530CE200C451F0 /* PBXTargetDependency */,
+			);
+			name = AutoVPNTests;
+			productName = AutoVPNTests;
+			productReference = CB8041451E530CE200C451F0 /* AutoVPNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB80414F1E530CE200C451F0 /* AutoVPNUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB80415F1E530CE200C451F0 /* Build configuration list for PBXNativeTarget "AutoVPNUITests" */;
+			buildPhases = (
+				CB80414C1E530CE200C451F0 /* Sources */,
+				CB80414D1E530CE200C451F0 /* Frameworks */,
+				CB80414E1E530CE200C451F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB8041521E530CE200C451F0 /* PBXTargetDependency */,
+			);
+			name = AutoVPNUITests;
+			productName = AutoVPNUITests;
+			productReference = CB8041501E530CE200C451F0 /* AutoVPNUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB8041271E530CE100C451F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = sunset;
+				TargetAttributes = {
+					CB80412E1E530CE100C451F0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FL2H8E474Y;
+						ProvisioningStyle = Automatic;
+					};
+					CB8041441E530CE200C451F0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FL2H8E474Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB80412E1E530CE100C451F0;
+					};
+					CB80414F1E530CE200C451F0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FL2H8E474Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB80412E1E530CE100C451F0;
+					};
+				};
+			};
+			buildConfigurationList = CB80412A1E530CE100C451F0 /* Build configuration list for PBXProject "AutoVPN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB8041261E530CE100C451F0;
+			productRefGroup = CB8041301E530CE100C451F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB80412E1E530CE100C451F0 /* AutoVPN */,
+				CB8041441E530CE200C451F0 /* AutoVPNTests */,
+				CB80414F1E530CE200C451F0 /* AutoVPNUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB80412D1E530CE100C451F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB80413F1E530CE200C451F0 /* LaunchScreen.storyboard in Resources */,
+				CB80413C1E530CE200C451F0 /* Assets.xcassets in Resources */,
+				CB80413A1E530CE200C451F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8041431E530CE200C451F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB80414E1E530CE200C451F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB80412B1E530CE100C451F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8041371E530CE100C451F0 /* DetailViewController.swift in Sources */,
+				CB8041351E530CE100C451F0 /* MasterViewController.swift in Sources */,
+				CB8041331E530CE100C451F0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8041411E530CE200C451F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB80414A1E530CE200C451F0 /* AutoVPNTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB80414C1E530CE200C451F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8041551E530CE200C451F0 /* AutoVPNUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB8041471E530CE200C451F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB80412E1E530CE100C451F0 /* AutoVPN */;
+			targetProxy = CB8041461E530CE200C451F0 /* PBXContainerItemProxy */;
+		};
+		CB8041521E530CE200C451F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB80412E1E530CE100C451F0 /* AutoVPN */;
+			targetProxy = CB8041511E530CE200C451F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB8041381E530CE200C451F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB8041391E530CE200C451F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB80413D1E530CE200C451F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB80413E1E530CE200C451F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB8041571E530CE200C451F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB8041581E530CE200C451F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB80415A1E530CE200C451F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				INFOPLIST_FILE = AutoVPN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CB80415B1E530CE200C451F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				INFOPLIST_FILE = AutoVPN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CB80415D1E530CE200C451F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				INFOPLIST_FILE = AutoVPNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoVPN.app/AutoVPN";
+			};
+			name = Debug;
+		};
+		CB80415E1E530CE200C451F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				INFOPLIST_FILE = AutoVPNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoVPN.app/AutoVPN";
+			};
+			name = Release;
+		};
+		CB8041601E530CE200C451F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				INFOPLIST_FILE = AutoVPNUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AutoVPN;
+			};
+			name = Debug;
+		};
+		CB8041611E530CE200C451F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				INFOPLIST_FILE = AutoVPNUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AutoVPN;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB80412A1E530CE100C451F0 /* Build configuration list for PBXProject "AutoVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8041571E530CE200C451F0 /* Debug */,
+				CB8041581E530CE200C451F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB8041591E530CE200C451F0 /* Build configuration list for PBXNativeTarget "AutoVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB80415A1E530CE200C451F0 /* Debug */,
+				CB80415B1E530CE200C451F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB80415C1E530CE200C451F0 /* Build configuration list for PBXNativeTarget "AutoVPNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB80415D1E530CE200C451F0 /* Debug */,
+				CB80415E1E530CE200C451F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB80415F1E530CE200C451F0 /* Build configuration list for PBXNativeTarget "AutoVPNUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8041601E530CE200C451F0 /* Debug */,
+				CB8041611E530CE200C451F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB8041271E530CE100C451F0 /* Project object */;
+}
