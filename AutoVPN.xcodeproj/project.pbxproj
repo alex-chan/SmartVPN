@@ -7,14 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BC65110A75B203FFC03FF97 /* libPods-AutoVPN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0801A974D553B9DBBE0B1F5B /* libPods-AutoVPN.a */; };
+		CB432B081E608478009436CC /* ProxyModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB432B071E608478009436CC /* ProxyModeViewController.swift */; };
+		CB432B0E1E61391F009436CC /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB432B0D1E61391F009436CC /* PurchaseViewController.swift */; };
+		CB432B131E615F70009436CC /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB432B121E615F70009436CC /* PurchaseCell.swift */; };
+		CB5602BE1E617DC100FCD577 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B31E617DC100FCD577 /* CocoaAsyncSocket.framework */; };
+		CB5602BF1E617DC100FCD577 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B31E617DC100FCD577 /* CocoaAsyncSocket.framework */; };
+		CB5602C11E617DC100FCD577 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B41E617DC100FCD577 /* CocoaLumberjack.framework */; };
+		CB5602C21E617DC100FCD577 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B51E617DC100FCD577 /* CocoaLumberjackSwift.framework */; };
+		CB5602C31E617DC100FCD577 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B51E617DC100FCD577 /* CocoaLumberjackSwift.framework */; };
+		CB5602C51E617DC100FCD577 /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B61E617DC100FCD577 /* lwip.framework */; };
+		CB5602C71E617DC100FCD577 /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B71E617DC100FCD577 /* MMDB.framework */; };
+		CB5602C91E617DC100FCD577 /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B81E617DC100FCD577 /* NEKit.framework */; };
+		CB5602CB1E617DC100FCD577 /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B91E617DC100FCD577 /* Resolver.framework */; };
+		CB5602CD1E617DC100FCD577 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BA1E617DC100FCD577 /* SnapKit.framework */; };
+		CB5602CE1E617DC100FCD577 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BB1E617DC100FCD577 /* Sodium.framework */; };
+		CB5602CF1E617DC100FCD577 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BB1E617DC100FCD577 /* Sodium.framework */; };
+		CB5602D01E617DC100FCD577 /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BC1E617DC100FCD577 /* tun2socks.framework */; };
+		CB5602D11E617DC100FCD577 /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BC1E617DC100FCD577 /* tun2socks.framework */; };
+		CB5602D21E617DC100FCD577 /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BD1E617DC100FCD577 /* Yaml.framework */; };
+		CB5602D31E617DC100FCD577 /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BD1E617DC100FCD577 /* Yaml.framework */; };
 		CB8041331E530CE100C451F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041321E530CE100C451F0 /* AppDelegate.swift */; };
-		CB8041351E530CE100C451F0 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041341E530CE100C451F0 /* MasterViewController.swift */; };
-		CB8041371E530CE100C451F0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041361E530CE100C451F0 /* DetailViewController.swift */; };
 		CB80413A1E530CE200C451F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8041381E530CE200C451F0 /* Main.storyboard */; };
 		CB80413C1E530CE200C451F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB80413B1E530CE200C451F0 /* Assets.xcassets */; };
 		CB80413F1E530CE200C451F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB80413D1E530CE200C451F0 /* LaunchScreen.storyboard */; };
 		CB80414A1E530CE200C451F0 /* AutoVPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041491E530CE200C451F0 /* AutoVPNTests.swift */; };
 		CB8041551E530CE200C451F0 /* AutoVPNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041541E530CE200C451F0 /* AutoVPNUITests.swift */; };
+		CB9E14E61E54068300531821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E14E51E54068300531821 /* AppDelegate.swift */; };
+		CB9E14E81E54068300531821 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E14E71E54068300531821 /* ViewController.swift */; };
+		CB9E14EA1E54068300531821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9E14E91E54068300531821 /* Assets.xcassets */; };
+		CB9E14ED1E54068300531821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9E14EB1E54068300531821 /* Main.storyboard */; };
+		CB9FDDBD1E5968D900DBCDE6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBC0E0811E54BDAA00323323 /* Info.plist */; };
+		CB9FDDC01E596B6300DBCDE6 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FDDBF1E596B6300DBCDE6 /* PacketTunnelProvider.swift */; };
+		CB9FDDC41E5BDCDF00DBCDE6 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E15981E54226900531821 /* MainTableViewController.swift */; };
+		CB9FDDC61E5BDE7000DBCDE6 /* AutoVPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FDDC51E5BDE7000DBCDE6 /* AutoVPNManager.swift */; };
+		CBC0E04D1E5461C800323323 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0E04C1E5461C800323323 /* PacketTunnelProvider.swift */; };
+		CBC0E0511E5461C800323323 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBC0E0481E5461C800323323 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBC0E0841E54BDAA00323323 /* PacketTunnel-mac.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBC0E07B1E54BDAA00323323 /* PacketTunnel-mac.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBD5636C1E63C2B6008F8DD4 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */; };
+		CBE3C9D91E61916300ED44E5 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */; };
+		CBE3C9DA1E61916300ED44E5 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE3C9DE1E6191CD00ED44E5 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B31E617DC100FCD577 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE3C9DF1E6191CD00ED44E5 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B41E617DC100FCD577 /* CocoaLumberjack.framework */; };
+		CBE3C9E01E6191CD00ED44E5 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B41E617DC100FCD577 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE3C9E21E6191CD00ED44E5 /* CocoaLumberjackSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B51E617DC100FCD577 /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE3C9E31E6191CD00ED44E5 /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B61E617DC100FCD577 /* lwip.framework */; };
+		CBE3C9E41E6191CD00ED44E5 /* lwip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B61E617DC100FCD577 /* lwip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE3C9E51E6191CD00ED44E5 /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B71E617DC100FCD577 /* MMDB.framework */; };
+		CBE3C9E61E6191CD00ED44E5 /* MMDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B71E617DC100FCD577 /* MMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE3C9E71E6191CD00ED44E5 /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B81E617DC100FCD577 /* NEKit.framework */; };
+		CBE3C9E81E6191CD00ED44E5 /* NEKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B81E617DC100FCD577 /* NEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE3C9EA1E6191CD00ED44E5 /* Resolver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B91E617DC100FCD577 /* Resolver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE3C9EE1E6191CD00ED44E5 /* Sodium.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BB1E617DC100FCD577 /* Sodium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE3C9F01E6191CD00ED44E5 /* tun2socks.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BC1E617DC100FCD577 /* tun2socks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE3C9F21E6191CD00ED44E5 /* Yaml.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BD1E617DC100FCD577 /* Yaml.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +78,147 @@
 			remoteGlobalIDString = CB80412E1E530CE100C451F0;
 			remoteInfo = AutoVPN;
 		};
+		CB9E14FA1E5406BF00531821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 36463A301CDCD5EB0040579C;
+			remoteInfo = "NEKit-macOS";
+		};
+		CB9E14FC1E5406BF00531821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 36C48D4D1CF88DED0071804F;
+			remoteInfo = "NEKit-iOS";
+		};
+		CB9E14FE1E5406BF00531821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 36A719981D5EEB4900DC35F5;
+			remoteInfo = NEKitDemo;
+		};
+		CB9E15001E5406BF00531821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 362347131D7D44E700A047DE;
+			remoteInfo = "NEKitTest-macOS";
+		};
+		CB9E15021E5406BF00531821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 362347221D7D458E00A047DE;
+			remoteInfo = "NEKitTests-iOS";
+		};
+		CBC0E03F1E54457100323323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 36463A2F1CDCD5EB0040579C;
+			remoteInfo = "NEKit-macOS";
+		};
+		CBC0E04F1E5461C800323323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB8041271E530CE100C451F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBC0E0471E5461C800323323;
+			remoteInfo = PacketTunnel;
+		};
+		CBC0E0821E54BDAA00323323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB8041271E530CE100C451F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBC0E07A1E54BDAA00323323;
+			remoteInfo = "PacketTunnel-mac";
+		};
+		CBC0E0891E54BDD400323323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 36463A2F1CDCD5EB0040579C;
+			remoteInfo = "NEKit-macOS";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CB9E14D91E54053A00531821 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBE3C9E41E6191CD00ED44E5 /* lwip.framework in Embed Frameworks */,
+				CBE3C9F21E6191CD00ED44E5 /* Yaml.framework in Embed Frameworks */,
+				CBE3C9DE1E6191CD00ED44E5 /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				CBE3C9EA1E6191CD00ED44E5 /* Resolver.framework in Embed Frameworks */,
+				CBE3C9E01E6191CD00ED44E5 /* CocoaLumberjack.framework in Embed Frameworks */,
+				CBE3C9DA1E61916300ED44E5 /* SnapKit.framework in Embed Frameworks */,
+				CBE3C9E21E6191CD00ED44E5 /* CocoaLumberjackSwift.framework in Embed Frameworks */,
+				CBE3C9F01E6191CD00ED44E5 /* tun2socks.framework in Embed Frameworks */,
+				CBE3C9E81E6191CD00ED44E5 /* NEKit.framework in Embed Frameworks */,
+				CBE3C9EE1E6191CD00ED44E5 /* Sodium.framework in Embed Frameworks */,
+				CBE3C9E61E6191CD00ED44E5 /* MMDB.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9E150E1E5407A000531821 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC0E0581E5461C800323323 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CBC0E0511E5461C800323323 /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC0E0881E54BDAA00323323 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CBC0E0841E54BDAA00323323 /* PacketTunnel-mac.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0801A974D553B9DBBE0B1F5B /* libPods-AutoVPN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoVPN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55213DAA1B218F835249EC09 /* Pods-AutoVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoVPN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoVPN/Pods-AutoVPN.debug.xcconfig"; sourceTree = "<group>"; };
+		C8DFB8FE27B73777638381A7 /* Pods-AutoVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoVPN.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoVPN/Pods-AutoVPN.release.xcconfig"; sourceTree = "<group>"; };
+		CB432B071E608478009436CC /* ProxyModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyModeViewController.swift; sourceTree = "<group>"; };
+		CB432B0D1E61391F009436CC /* PurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		CB432B121E615F70009436CC /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
+		CB5602B31E617DC100FCD577 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = SOURCE_ROOT; };
+		CB5602B41E617DC100FCD577 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = SOURCE_ROOT; };
+		CB5602B51E617DC100FCD577 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = SOURCE_ROOT; };
+		CB5602B61E617DC100FCD577 /* lwip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lwip.framework; path = Carthage/Build/iOS/lwip.framework; sourceTree = SOURCE_ROOT; };
+		CB5602B71E617DC100FCD577 /* MMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMDB.framework; path = Carthage/Build/iOS/MMDB.framework; sourceTree = SOURCE_ROOT; };
+		CB5602B81E617DC100FCD577 /* NEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NEKit.framework; path = Carthage/Build/iOS/NEKit.framework; sourceTree = SOURCE_ROOT; };
+		CB5602B91E617DC100FCD577 /* Resolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resolver.framework; path = Carthage/Build/iOS/Resolver.framework; sourceTree = SOURCE_ROOT; };
+		CB5602BA1E617DC100FCD577 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
+		CB5602BB1E617DC100FCD577 /* Sodium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sodium.framework; path = Carthage/Build/iOS/Sodium.framework; sourceTree = SOURCE_ROOT; };
+		CB5602BC1E617DC100FCD577 /* tun2socks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tun2socks.framework; path = Carthage/Build/iOS/tun2socks.framework; sourceTree = SOURCE_ROOT; };
+		CB5602BD1E617DC100FCD577 /* Yaml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yaml.framework; path = Carthage/Build/iOS/Yaml.framework; sourceTree = SOURCE_ROOT; };
 		CB80412F1E530CE100C451F0 /* AutoVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8041321E530CE100C451F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB8041341E530CE100C451F0 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		CB8041361E530CE100C451F0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CB8041391E530CE200C451F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB80413B1E530CE200C451F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB80413E1E530CE200C451F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +229,28 @@
 		CB8041501E530CE200C451F0 /* AutoVPNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoVPNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8041541E530CE200C451F0 /* AutoVPNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoVPNUITests.swift; sourceTree = "<group>"; };
 		CB8041561E530CE200C451F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9E14E31E54068200531821 /* AutoVPN-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoVPN-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9E14E51E54068300531821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB9E14E71E54068300531821 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB9E14E91E54068300531821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB9E14EC1E54068300531821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB9E14EE1E54068300531821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NEKit.xcodeproj; path = Carthage/Checkouts/NEKit/NEKit.xcodeproj; sourceTree = "<group>"; };
+		CB9E15981E54226900531821 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		CB9FDDBE1E596B6300DBCDE6 /* PacketTunnel-mac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PacketTunnel-mac-Bridging-Header.h"; sourceTree = "<group>"; };
+		CB9FDDBF1E596B6300DBCDE6 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		CB9FDDC51E5BDE7000DBCDE6 /* AutoVPNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoVPNManager.swift; sourceTree = "<group>"; };
+		CBC0E0481E5461C800323323 /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC0E04B1E5461C800323323 /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		CBC0E04C1E5461C800323323 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		CBC0E04E1E5461C800323323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC0E05B1E5462C800323323 /* AutoVPN-mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AutoVPN-mac.entitlements"; sourceTree = "<group>"; };
+		CBC0E05E1E54656700323323 /* AutoVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoVPN.entitlements; sourceTree = "<group>"; };
+		CBC0E07B1E54BDAA00323323 /* PacketTunnel-mac.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PacketTunnel-mac.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC0E07E1E54BDAA00323323 /* PacketTunnel_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel_mac.entitlements; sourceTree = "<group>"; };
+		CBC0E0811E54BDAA00323323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +258,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5602D01E617DC100FCD577 /* tun2socks.framework in Frameworks */,
+				CBD5636C1E63C2B6008F8DD4 /* NetworkExtension.framework in Frameworks */,
+				CBE3C9D91E61916300ED44E5 /* SnapKit.framework in Frameworks */,
+				CB5602C21E617DC100FCD577 /* CocoaLumberjackSwift.framework in Frameworks */,
+				CB5602BE1E617DC100FCD577 /* CocoaAsyncSocket.framework in Frameworks */,
+				CB5602D21E617DC100FCD577 /* Yaml.framework in Frameworks */,
+				CBE3C9E51E6191CD00ED44E5 /* MMDB.framework in Frameworks */,
+				CBE3C9E31E6191CD00ED44E5 /* lwip.framework in Frameworks */,
+				2BC65110A75B203FFC03FF97 /* libPods-AutoVPN.a in Frameworks */,
+				CBE3C9DF1E6191CD00ED44E5 /* CocoaLumberjack.framework in Frameworks */,
+				CBE3C9E71E6191CD00ED44E5 /* NEKit.framework in Frameworks */,
+				CB5602CE1E617DC100FCD577 /* Sodium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,16 +287,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB9E14E01E54068200531821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC0E0451E5461C800323323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5602C71E617DC100FCD577 /* MMDB.framework in Frameworks */,
+				CB5602C11E617DC100FCD577 /* CocoaLumberjack.framework in Frameworks */,
+				CB5602BF1E617DC100FCD577 /* CocoaAsyncSocket.framework in Frameworks */,
+				CB5602C51E617DC100FCD577 /* lwip.framework in Frameworks */,
+				CB5602CF1E617DC100FCD577 /* Sodium.framework in Frameworks */,
+				CB5602CB1E617DC100FCD577 /* Resolver.framework in Frameworks */,
+				CB5602C91E617DC100FCD577 /* NEKit.framework in Frameworks */,
+				CB5602D31E617DC100FCD577 /* Yaml.framework in Frameworks */,
+				CB5602D11E617DC100FCD577 /* tun2socks.framework in Frameworks */,
+				CB5602C31E617DC100FCD577 /* CocoaLumberjackSwift.framework in Frameworks */,
+				CB5602CD1E617DC100FCD577 /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC0E0781E54BDAA00323323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6474354E3FEA5AA034A2FF19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55213DAA1B218F835249EC09 /* Pods-AutoVPN.debug.xcconfig */,
+				C8DFB8FE27B73777638381A7 /* Pods-AutoVPN.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CB8041261E530CE100C451F0 = {
 			isa = PBXGroup;
 			children = (
+				CBD563711E63C5C6008F8DD4 /* Res */,
+				CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */,
 				CB8041311E530CE100C451F0 /* AutoVPN */,
 				CB8041481E530CE200C451F0 /* AutoVPNTests */,
 				CB8041531E530CE200C451F0 /* AutoVPNUITests */,
+				CB9E14E41E54068300531821 /* AutoVPN-mac */,
+				CBC0E0491E5461C800323323 /* PacketTunnel */,
+				CBC0E07C1E54BDAA00323323 /* PacketTunnel-mac */,
 				CB8041301E530CE100C451F0 /* Products */,
+				CB9E14CD1E54046E00531821 /* Frameworks */,
+				6474354E3FEA5AA034A2FF19 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +354,9 @@
 				CB80412F1E530CE100C451F0 /* AutoVPN.app */,
 				CB8041451E530CE200C451F0 /* AutoVPNTests.xctest */,
 				CB8041501E530CE200C451F0 /* AutoVPNUITests.xctest */,
+				CB9E14E31E54068200531821 /* AutoVPN-mac.app */,
+				CBC0E0481E5461C800323323 /* PacketTunnel.appex */,
+				CBC0E07B1E54BDAA00323323 /* PacketTunnel-mac.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +364,17 @@
 		CB8041311E530CE100C451F0 /* AutoVPN */ = {
 			isa = PBXGroup;
 			children = (
+				CBC0E05E1E54656700323323 /* AutoVPN.entitlements */,
 				CB8041321E530CE100C451F0 /* AppDelegate.swift */,
-				CB8041341E530CE100C451F0 /* MasterViewController.swift */,
-				CB8041361E530CE100C451F0 /* DetailViewController.swift */,
 				CB8041381E530CE200C451F0 /* Main.storyboard */,
 				CB80413B1E530CE200C451F0 /* Assets.xcassets */,
 				CB80413D1E530CE200C451F0 /* LaunchScreen.storyboard */,
 				CB8041401E530CE200C451F0 /* Info.plist */,
+				CB9E15981E54226900531821 /* MainTableViewController.swift */,
+				CB9FDDC51E5BDE7000DBCDE6 /* AutoVPNManager.swift */,
+				CB432B071E608478009436CC /* ProxyModeViewController.swift */,
+				CB432B0D1E61391F009436CC /* PurchaseViewController.swift */,
+				CB432B121E615F70009436CC /* PurchaseCell.swift */,
 			);
 			path = AutoVPN;
 			sourceTree = "<group>";
@@ -128,6 +397,113 @@
 			path = AutoVPNUITests;
 			sourceTree = "<group>";
 		};
+		CB9E14CD1E54046E00531821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */,
+				CB9E15771E540A5B00531821 /* iOS */,
+				CB9E15301E5408F200531821 /* macOS */,
+				0801A974D553B9DBBE0B1F5B /* libPods-AutoVPN.a */,
+			);
+			name = Frameworks;
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		CB9E14E41E54068300531821 /* AutoVPN-mac */ = {
+			isa = PBXGroup;
+			children = (
+				CBC0E05B1E5462C800323323 /* AutoVPN-mac.entitlements */,
+				CB9E14E51E54068300531821 /* AppDelegate.swift */,
+				CB9E14E71E54068300531821 /* ViewController.swift */,
+				CB9E14E91E54068300531821 /* Assets.xcassets */,
+				CB9E14EB1E54068300531821 /* Main.storyboard */,
+				CB9E14EE1E54068300531821 /* Info.plist */,
+			);
+			path = "AutoVPN-mac";
+			sourceTree = "<group>";
+		};
+		CB9E14F31E5406BE00531821 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB9E14FB1E5406BF00531821 /* NEKit.framework */,
+				CB9E14FD1E5406BF00531821 /* NEKit.framework */,
+				CB9E14FF1E5406BF00531821 /* NEKitDemo.app */,
+				CB9E15011E5406BF00531821 /* NEKitTest-macOS.xctest */,
+				CB9E15031E5406BF00531821 /* NEKitTests-iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB9E15301E5408F200531821 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		CB9E15771E540A5B00531821 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */,
+				CB5602B31E617DC100FCD577 /* CocoaAsyncSocket.framework */,
+				CB5602B41E617DC100FCD577 /* CocoaLumberjack.framework */,
+				CB5602B51E617DC100FCD577 /* CocoaLumberjackSwift.framework */,
+				CB5602B61E617DC100FCD577 /* lwip.framework */,
+				CB5602B71E617DC100FCD577 /* MMDB.framework */,
+				CB5602B81E617DC100FCD577 /* NEKit.framework */,
+				CB5602B91E617DC100FCD577 /* Resolver.framework */,
+				CB5602BA1E617DC100FCD577 /* SnapKit.framework */,
+				CB5602BB1E617DC100FCD577 /* Sodium.framework */,
+				CB5602BC1E617DC100FCD577 /* tun2socks.framework */,
+				CB5602BD1E617DC100FCD577 /* Yaml.framework */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		CBC0E0491E5461C800323323 /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				CBC0E04C1E5461C800323323 /* PacketTunnelProvider.swift */,
+				CBC0E04E1E5461C800323323 /* Info.plist */,
+				CBC0E04A1E5461C800323323 /* Supporting Files */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
+		CBC0E04A1E5461C800323323 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBC0E04B1E5461C800323323 /* PacketTunnel.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBC0E07C1E54BDAA00323323 /* PacketTunnel-mac */ = {
+			isa = PBXGroup;
+			children = (
+				CBC0E0811E54BDAA00323323 /* Info.plist */,
+				CBC0E07D1E54BDAA00323323 /* Supporting Files */,
+				CB9FDDBF1E596B6300DBCDE6 /* PacketTunnelProvider.swift */,
+				CB9FDDBE1E596B6300DBCDE6 /* PacketTunnel-mac-Bridging-Header.h */,
+			);
+			path = "PacketTunnel-mac";
+			sourceTree = "<group>";
+		};
+		CBC0E07D1E54BDAA00323323 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBC0E07E1E54BDAA00323323 /* PacketTunnel_mac.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBD563711E63C5C6008F8DD4 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,13 +511,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB8041591E530CE200C451F0 /* Build configuration list for PBXNativeTarget "AutoVPN" */;
 			buildPhases = (
+				78DA5C1832B6FE883FC81C22 /* [CP] Check Pods Manifest.lock */,
 				CB80412B1E530CE100C451F0 /* Sources */,
 				CB80412C1E530CE100C451F0 /* Frameworks */,
 				CB80412D1E530CE100C451F0 /* Resources */,
+				CB9E14CB1E53F0B900531821 /* ShellScript */,
+				CB9E14D91E54053A00531821 /* Embed Frameworks */,
+				CBC0E0581E5461C800323323 /* Embed App Extensions */,
+				D914FB05DFACC49692202A86 /* [CP] Embed Pods Frameworks */,
+				90EF010BF27DD9799ADED7E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CBC0E0501E5461C800323323 /* PBXTargetDependency */,
 			);
 			name = AutoVPN;
 			productName = AutoVPN;
@@ -184,13 +567,69 @@
 			productReference = CB8041501E530CE200C451F0 /* AutoVPNUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CB9E14E21E54068200531821 /* AutoVPN-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB9E14F11E54068300531821 /* Build configuration list for PBXNativeTarget "AutoVPN-mac" */;
+			buildPhases = (
+				CB9E14DF1E54068200531821 /* Sources */,
+				CB9E14E01E54068200531821 /* Frameworks */,
+				CB9E14E11E54068200531821 /* Resources */,
+				CB9E150E1E5407A000531821 /* Embed Frameworks */,
+				CBC0E0881E54BDAA00323323 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBC0E0401E54457100323323 /* PBXTargetDependency */,
+				CBC0E0831E54BDAA00323323 /* PBXTargetDependency */,
+			);
+			name = "AutoVPN-mac";
+			productName = "AutoVPN-mac";
+			productReference = CB9E14E31E54068200531821 /* AutoVPN-mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBC0E0471E5461C800323323 /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC0E0571E5461C800323323 /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				CBC0E0441E5461C800323323 /* Sources */,
+				CBC0E0451E5461C800323323 /* Frameworks */,
+				CBC0E0461E5461C800323323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			productName = PacketTunnel;
+			productReference = CBC0E0481E5461C800323323 /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CBC0E07A1E54BDAA00323323 /* PacketTunnel-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC0E0851E54BDAA00323323 /* Build configuration list for PBXNativeTarget "PacketTunnel-mac" */;
+			buildPhases = (
+				CBC0E0771E54BDAA00323323 /* Sources */,
+				CBC0E0781E54BDAA00323323 /* Frameworks */,
+				CBC0E0791E54BDAA00323323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBC0E08A1E54BDD400323323 /* PBXTargetDependency */,
+			);
+			name = "PacketTunnel-mac";
+			productName = "PacketTunnel-mac";
+			productReference = CBC0E07B1E54BDAA00323323 /* PacketTunnel-mac.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CB8041271E530CE100C451F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = sunset;
 				TargetAttributes = {
@@ -198,6 +637,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = FL2H8E474Y;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.NetworkExtensions = {
+								enabled = 1;
+							};
+						};
 					};
 					CB8041441E530CE200C451F0 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -210,6 +657,40 @@
 						DevelopmentTeam = FL2H8E474Y;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CB80412E1E530CE100C451F0;
+					};
+					CB9E14E21E54068200531821 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FL2H8E474Y;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions = {
+								enabled = 1;
+							};
+						};
+					};
+					CBC0E0471E5461C800323323 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = FL2H8E474Y;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					CBC0E07A1E54BDAA00323323 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = FL2H8E474Y;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -224,14 +705,61 @@
 			mainGroup = CB8041261E530CE100C451F0;
 			productRefGroup = CB8041301E530CE100C451F0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CB9E14F31E5406BE00531821 /* Products */;
+					ProjectRef = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CB80412E1E530CE100C451F0 /* AutoVPN */,
+				CB9E14E21E54068200531821 /* AutoVPN-mac */,
 				CB8041441E530CE200C451F0 /* AutoVPNTests */,
 				CB80414F1E530CE200C451F0 /* AutoVPNUITests */,
+				CBC0E0471E5461C800323323 /* PacketTunnel */,
+				CBC0E07A1E54BDAA00323323 /* PacketTunnel-mac */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CB9E14FB1E5406BF00531821 /* NEKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NEKit.framework;
+			remoteRef = CB9E14FA1E5406BF00531821 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB9E14FD1E5406BF00531821 /* NEKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NEKit.framework;
+			remoteRef = CB9E14FC1E5406BF00531821 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB9E14FF1E5406BF00531821 /* NEKitDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = NEKitDemo.app;
+			remoteRef = CB9E14FE1E5406BF00531821 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB9E15011E5406BF00531821 /* NEKitTest-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "NEKitTest-macOS.xctest";
+			remoteRef = CB9E15001E5406BF00531821 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB9E15031E5406BF00531821 /* NEKitTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "NEKitTests-iOS.xctest";
+			remoteRef = CB9E15021E5406BF00531821 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CB80412D1E530CE100C451F0 /* Resources */ = {
@@ -258,15 +786,104 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB9E14E11E54068200531821 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9E14EA1E54068300531821 /* Assets.xcassets in Resources */,
+				CB9E14ED1E54068300531821 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC0E0461E5461C800323323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC0E0791E54BDAA00323323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9FDDBD1E5968D900DBCDE6 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78DA5C1832B6FE883FC81C22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90EF010BF27DD9799ADED7E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoVPN/Pods-AutoVPN-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB9E14CB1E53F0B900531821 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/NEKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		D914FB05DFACC49692202A86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoVPN/Pods-AutoVPN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB80412B1E530CE100C451F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8041371E530CE100C451F0 /* DetailViewController.swift in Sources */,
-				CB8041351E530CE100C451F0 /* MasterViewController.swift in Sources */,
+				CB9FDDC61E5BDE7000DBCDE6 /* AutoVPNManager.swift in Sources */,
+				CB9FDDC41E5BDCDF00DBCDE6 /* MainTableViewController.swift in Sources */,
+				CB432B131E615F70009436CC /* PurchaseCell.swift in Sources */,
+				CB432B081E608478009436CC /* ProxyModeViewController.swift in Sources */,
+				CB432B0E1E61391F009436CC /* PurchaseViewController.swift in Sources */,
 				CB8041331E530CE100C451F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +904,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB9E14DF1E54068200531821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9E14E81E54068300531821 /* ViewController.swift in Sources */,
+				CB9E14E61E54068300531821 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC0E0441E5461C800323323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC0E04D1E5461C800323323 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC0E0771E54BDAA00323323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9FDDC01E596B6300DBCDE6 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,6 +941,26 @@
 			isa = PBXTargetDependency;
 			target = CB80412E1E530CE100C451F0 /* AutoVPN */;
 			targetProxy = CB8041511E530CE200C451F0 /* PBXContainerItemProxy */;
+		};
+		CBC0E0401E54457100323323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NEKit-macOS";
+			targetProxy = CBC0E03F1E54457100323323 /* PBXContainerItemProxy */;
+		};
+		CBC0E0501E5461C800323323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBC0E0471E5461C800323323 /* PacketTunnel */;
+			targetProxy = CBC0E04F1E5461C800323323 /* PBXContainerItemProxy */;
+		};
+		CBC0E0831E54BDAA00323323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBC0E07A1E54BDAA00323323 /* PacketTunnel-mac */;
+			targetProxy = CBC0E0821E54BDAA00323323 /* PBXContainerItemProxy */;
+		};
+		CBC0E08A1E54BDD400323323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NEKit-macOS";
+			targetProxy = CBC0E0891E54BDD400323323 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -319,6 +981,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		CB9E14EB1E54068300531821 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB9E14EC1E54068300531821 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -326,6 +996,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -368,6 +1039,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -376,6 +1048,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -410,6 +1083,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -417,26 +1091,46 @@
 		};
 		CB80415A1E530CE200C451F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55213DAA1B218F835249EC09 /* Pods-AutoVPN.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AutoVPN/AutoVPN.entitlements;
 				DEVELOPMENT_TEAM = FL2H8E474Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Framework/iOS",
+				);
 				INFOPLIST_FILE = AutoVPN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CB80415B1E530CE200C451F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8DFB8FE27B73777638381A7 /* Pods-AutoVPN.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AutoVPN/AutoVPN.entitlements;
 				DEVELOPMENT_TEAM = FL2H8E474Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Framework/iOS",
+				);
 				INFOPLIST_FILE = AutoVPN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -499,6 +1193,153 @@
 			};
 			name = Release;
 		};
+		CB9E14EF1E54068300531821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AutoVPN-mac/AutoVPN-mac.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Framework/macOS",
+				);
+				INFOPLIST_FILE = "AutoVPN-mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "gmail.czzsunset.AutoVPN-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CB9E14F01E54068300531821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AutoVPN-mac/AutoVPN-mac.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Framework/macOS",
+				);
+				INFOPLIST_FILE = "AutoVPN-mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "gmail.czzsunset.AutoVPN-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CBC0E0521E5461C800323323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Framework/iOS",
+				);
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPN.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CBC0E0531E5461C800323323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Framework/iOS",
+				);
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPN.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CBC0E0861E54BDAA00323323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "PacketTunnel-mac/PacketTunnel_mac.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "PacketTunnel-mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "gmail.czzsunset.AutoVPN-mac.PacketTunnel-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PacketTunnel-mac/PacketTunnel-mac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CBC0E0871E54BDAA00323323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "PacketTunnel-mac/PacketTunnel_mac.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "PacketTunnel-mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "gmail.czzsunset.AutoVPN-mac.PacketTunnel-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PacketTunnel-mac/PacketTunnel-mac-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -518,6 +1359,7 @@
 				CB80415B1E530CE200C451F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB80415C1E530CE200C451F0 /* Build configuration list for PBXNativeTarget "AutoVPNTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +1368,7 @@
 				CB80415E1E530CE200C451F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB80415F1E530CE200C451F0 /* Build configuration list for PBXNativeTarget "AutoVPNUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +1377,34 @@
 				CB8041611E530CE200C451F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB9E14F11E54068300531821 /* Build configuration list for PBXNativeTarget "AutoVPN-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9E14EF1E54068300531821 /* Debug */,
+				CB9E14F01E54068300531821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC0E0571E5461C800323323 /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC0E0521E5461C800323323 /* Debug */,
+				CBC0E0531E5461C800323323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC0E0851E54BDAA00323323 /* Build configuration list for PBXNativeTarget "PacketTunnel-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC0E0861E54BDAA00323323 /* Debug */,
+				CBC0E0871E54BDAA00323323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

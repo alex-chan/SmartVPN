@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ProxyServer.init(address : IPAddress?, port : Port) -&gt; ProxyServer:ProxyServer.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ObserverFactory.currentFactory">
+            </PersistentString>
+            <PersistentString
+               value = "observer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
