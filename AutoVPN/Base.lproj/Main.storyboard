@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--AutoVPN-->
+        <!--SmartVPN-->
         <scene sceneID="l81-JK-8Rt">
             <objects>
                 <tableViewController id="OFb-xw-1SI" customClass="MainTableViewController" customModule="AutoVPN" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,25 +28,38 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUL-AH-yRY">
-                                                    <rect key="frame" x="157.5" y="22.5" width="59" height="30"/>
-                                                    <state key="normal" title="Connect"/>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="755" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GUL-AH-yRY">
+                                                    <rect key="frame" x="143" y="4.5" width="89" height="42"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                    <color key="tintColor" red="0.13885803729999999" green="0.58785113870000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                    <state key="normal" title="Connect">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="startStopVPN:" destination="OFb-xw-1SI" eventType="touchUpInside" id="TTh-yb-wgd"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Connect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="287-lb-buo">
-                                                    <rect key="frame" x="166" y="26" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="287-lb-buo">
+                                                    <rect key="frame" x="154.5" y="26" width="65" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.16478473229999999" green="0.62470785890000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="287-lb-buo" secondAttribute="bottom" constant="20" id="Aza-mD-bAF"/>
                                                 <constraint firstItem="GUL-AH-yRY" firstAttribute="centerX" secondItem="ohj-vM-Q6m" secondAttribute="centerX" id="Mf8-ZB-8Ru"/>
                                                 <constraint firstItem="287-lb-buo" firstAttribute="centerX" secondItem="ohj-vM-Q6m" secondAttribute="centerX" id="eGD-TG-iA5"/>
-                                                <constraint firstItem="GUL-AH-yRY" firstAttribute="centerY" secondItem="ohj-vM-Q6m" secondAttribute="centerY" id="vWy-eK-6vE"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="GUL-AH-yRY" secondAttribute="bottom" constant="20" id="pgo-JK-KVC"/>
+                                                <constraint firstItem="287-lb-buo" firstAttribute="centerY" secondItem="ohj-vM-Q6m" secondAttribute="centerY" id="qgZ-Ae-OU8"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -158,7 +171,7 @@
                             <outlet property="delegate" destination="OFb-xw-1SI" id="Fzt-3r-dPa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="AutoVPN" id="R5h-jz-mgX"/>
+                    <navigationItem key="navigationItem" title="SmartVPN" id="R5h-jz-mgX"/>
                     <connections>
                         <outlet property="actionCell" destination="rw9-Ke-2Uk" id="iev-NF-Ywi"/>
                         <outlet property="mainButton" destination="GUL-AH-yRY" id="eCx-S2-LA8"/>
@@ -167,7 +180,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qc8-D1-43P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317.60000000000002" y="821.73913043478262"/>
+            <point key="canvasLocation" x="159" y="776"/>
         </scene>
         <!--ProxyModeController-->
         <scene sceneID="dr9-2A-j7B">
@@ -239,7 +252,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byj-Cf-G8W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1209" y="567"/>
+            <point key="canvasLocation" x="967" y="587"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="sGY-gw-1HN">
@@ -380,6 +393,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RH1-sN-9cJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.16478473229999999" green="0.62470785890000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="OFb-xw-1SI" kind="relationship" relationship="rootViewController" id="Mgi-Pm-MnF"/>

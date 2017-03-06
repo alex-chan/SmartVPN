@@ -12,7 +12,7 @@ import NetworkExtension
 
 import NEKit
 import CocoaLumberjackSwift
-
+import Localize_Swift
 
 
 class MainTableViewController: UITableViewController {
@@ -40,6 +40,9 @@ class MainTableViewController: UITableViewController {
         DDLog.add(DDTTYLogger.sharedInstance()) // TTY = Xcode console
         manager.delegate = self
         
+        actionCell.selectionStyle = .none
+        
+        statusLabel.text = "Free Currently".localized()
 
     }
 
@@ -54,6 +57,9 @@ class MainTableViewController: UITableViewController {
         }
         return super.tableView(tableView, heightForRowAt: indexPath)
     }
+    
+    
+
     
     // MARK: - Actions
 
@@ -79,6 +85,6 @@ class MainTableViewController: UITableViewController {
 extension MainTableViewController: AutoVPNManagerDelegate {
     func vpnStatusDidUpdated(status: ProxyServerStatus) {
         mainButton.setTitle(status.description, for: .normal)
-        statusLabel.text = status.description
+//        statusLabel.text = status.description
     }
 }

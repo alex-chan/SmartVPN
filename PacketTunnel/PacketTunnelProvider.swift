@@ -106,10 +106,13 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         
         let directAdapterFactory = DirectAdapterFactory()
         let httpAdapterFactory = HTTPAdapterFactory(serverHost: kProxyServer, serverPort: kProxyPort, auth: nil)
+
         let chinaRule =  CountryRule(countryCode: "CN", match: true, adapterFactory: directAdapterFactory)
         let allRule = AllRule(adapterFactory: httpAdapterFactory)
         
         let manager = RuleManager(fromRules: [chinaRule, allRule], appendDirect: true)
+        
+
         RuleManager.currentManager = manager
         
         ObserverFactory.currentFactory = DebugObserverFactory2()

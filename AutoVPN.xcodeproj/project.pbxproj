@@ -45,6 +45,10 @@
 		CBC0E0511E5461C800323323 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBC0E0481E5461C800323323 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBC0E0841E54BDAA00323323 /* PacketTunnel-mac.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBC0E07B1E54BDAA00323323 /* PacketTunnel-mac.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBD5636C1E63C2B6008F8DD4 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */; };
+		CBD85B511E6D42950049B210 /* Localize_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD85B501E6D42950049B210 /* Localize_Swift.framework */; };
+		CBD85B521E6D429E0049B210 /* Localize_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD85B501E6D42950049B210 /* Localize_Swift.framework */; };
+		CBD85B531E6D429E0049B210 /* Localize_Swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBD85B501E6D42950049B210 /* Localize_Swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBD85B5A1E6D46D40049B210 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBD85B5C1E6D46D40049B210 /* Localizable.strings */; };
 		CBE3C9D91E61916300ED44E5 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */; };
 		CBE3C9DA1E61916300ED44E5 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBE3C9DE1E6191CD00ED44E5 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B31E617DC100FCD577 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -157,6 +161,7 @@
 				CBE3C9E01E6191CD00ED44E5 /* CocoaLumberjack.framework in Embed Frameworks */,
 				CBE3C9DA1E61916300ED44E5 /* SnapKit.framework in Embed Frameworks */,
 				CBE3C9E21E6191CD00ED44E5 /* CocoaLumberjackSwift.framework in Embed Frameworks */,
+				CBD85B531E6D429E0049B210 /* Localize_Swift.framework in Embed Frameworks */,
 				CBE3C9F01E6191CD00ED44E5 /* tun2socks.framework in Embed Frameworks */,
 				CBE3C9E81E6191CD00ED44E5 /* NEKit.framework in Embed Frameworks */,
 				CBE3C9EE1E6191CD00ED44E5 /* Sodium.framework in Embed Frameworks */,
@@ -250,6 +255,12 @@
 		CBC0E07E1E54BDAA00323323 /* PacketTunnel_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel_mac.entitlements; sourceTree = "<group>"; };
 		CBC0E0811E54BDAA00323323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		CBD85B491E6D329C0049B210 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		CBD85B4E1E6D329D0049B210 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		CBD85B4F1E6D329D0049B210 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		CBD85B501E6D42950049B210 /* Localize_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Localize_Swift.framework; sourceTree = "<group>"; };
+		CBD85B5D1E6D47080049B210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CBD85B5E1E6D471C0049B210 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -259,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5602D01E617DC100FCD577 /* tun2socks.framework in Frameworks */,
+				CBD85B521E6D429E0049B210 /* Localize_Swift.framework in Frameworks */,
 				CBD5636C1E63C2B6008F8DD4 /* NetworkExtension.framework in Frameworks */,
 				CBE3C9D91E61916300ED44E5 /* SnapKit.framework in Frameworks */,
 				CB5602C21E617DC100FCD577 /* CocoaLumberjackSwift.framework in Frameworks */,
@@ -268,6 +280,7 @@
 				CBE3C9E31E6191CD00ED44E5 /* lwip.framework in Frameworks */,
 				2BC65110A75B203FFC03FF97 /* libPods-AutoVPN.a in Frameworks */,
 				CBE3C9DF1E6191CD00ED44E5 /* CocoaLumberjack.framework in Frameworks */,
+				CBD85B511E6D42950049B210 /* Localize_Swift.framework in Frameworks */,
 				CBE3C9E71E6191CD00ED44E5 /* NEKit.framework in Frameworks */,
 				CB5602CE1E617DC100FCD577 /* Sodium.framework in Frameworks */,
 			);
@@ -370,6 +383,7 @@
 				CB80413B1E530CE200C451F0 /* Assets.xcassets */,
 				CB80413D1E530CE200C451F0 /* LaunchScreen.storyboard */,
 				CB8041401E530CE200C451F0 /* Info.plist */,
+				CBD85B5C1E6D46D40049B210 /* Localizable.strings */,
 				CB9E15981E54226900531821 /* MainTableViewController.swift */,
 				CB9FDDC51E5BDE7000DBCDE6 /* AutoVPNManager.swift */,
 				CB432B071E608478009436CC /* ProxyModeViewController.swift */,
@@ -444,6 +458,7 @@
 		CB9E15771E540A5B00531821 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CBD85B501E6D42950049B210 /* Localize_Swift.framework */,
 				CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */,
 				CB5602B31E617DC100FCD577 /* CocoaAsyncSocket.framework */,
 				CB5602B41E617DC100FCD577 /* CocoaLumberjack.framework */,
@@ -500,8 +515,16 @@
 		CBD563711E63C5C6008F8DD4 /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				CBD85B421E6CFB370049B210 /* Proxy */,
 			);
 			path = Res;
+			sourceTree = "<group>";
+		};
+		CBD85B421E6CFB370049B210 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Proxy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -767,6 +790,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB80413F1E530CE200C451F0 /* LaunchScreen.storyboard in Resources */,
+				CBD85B5A1E6D46D40049B210 /* Localizable.strings in Resources */,
 				CB80413C1E530CE200C451F0 /* Assets.xcassets in Resources */,
 				CB80413A1E530CE200C451F0 /* Main.storyboard in Resources */,
 			);
@@ -969,6 +993,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB8041391E530CE200C451F0 /* Base */,
+				CBD85B491E6D329C0049B210 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -977,6 +1002,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB80413E1E530CE200C451F0 /* Base */,
+				CBD85B4E1E6D329D0049B210 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -985,8 +1011,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB9E14EC1E54068300531821 /* Base */,
+				CBD85B4F1E6D329D0049B210 /* zh-Hans */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBD85B5C1E6D46D40049B210 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBD85B5D1E6D47080049B210 /* Base */,
+				CBD85B5E1E6D471C0049B210 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -997,6 +1033,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1049,6 +1086,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

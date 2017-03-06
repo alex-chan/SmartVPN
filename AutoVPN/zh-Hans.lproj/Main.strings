@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "Connect"; ObjectID = "287-lb-buo"; */
+"287-lb-buo.text" = "连接";
+
+/* Class = "UILabel"; text = "Smart Mode"; ObjectID = "5TS-bj-1dZ"; */
+"5TS-bj-1dZ.text" = "智能模式";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "8Bv-lZ-4lD"; */
+"8Bv-lZ-4lD.text" = "";
+
+/* Class = "UINavigationController"; title = "AutoVPN"; ObjectID = "G0q-Sf-TaX"; */
+"G0q-Sf-TaX.title" = "AutoVPN";
+
+/* Class = "UIButton"; normalTitle = "Connect"; ObjectID = "GUL-AH-yRY"; */
+"GUL-AH-yRY.normalTitle" = "连接";
+
+/* Class = "UINavigationItem"; title = "AutoVPN"; ObjectID = "R5h-jz-mgX"; */
+"R5h-jz-mgX.title" = "SmartVPN";
+
+/* Class = "UITableViewController"; title = "Proxy Mode"; ObjectID = "VXd-He-H4C"; */
+"VXd-He-H4C.title" = "代理模式";
+
+/* Class = "UILabel"; text = "About"; ObjectID = "W8W-ia-pBo"; */
+"W8W-ia-pBo.text" = "关于";
+
+/* Class = "UILabel"; text = "Acount"; ObjectID = "Zqu-aa-gFi"; */
+"Zqu-aa-gFi.text" = "帐户";
+
+/* Class = "UILabel"; text = "Coupon Code"; ObjectID = "ha7-CG-VtL"; */
+"ha7-CG-VtL.text" = "优惠码";
+
+/* Class = "UILabel"; text = "Proxy Mode"; ObjectID = "lLd-ec-3L8"; */
+"lLd-ec-3L8.text" = "代理模式";
+
+/* Class = "UILabel"; text = "Proxy all non-China and non-Apple dataflow"; ObjectID = "qDj-tm-KDe"; */
+"qDj-tm-KDe.text" = "代理所有非中国和非苹果流量";
+
+/* Class = "UILabel"; text = "Purchase High Speed"; ObjectID = "sWV-rl-a8d"; */
+"sWV-rl-a8d.text" = "购买高速流量";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "tNi-rz-JSg"; */
+"tNi-rz-JSg.text" = "Title";
+
+/* Class = "UILabel"; text = "Proxy all dataflow"; ObjectID = "xNk-pf-Lnk"; */
+"xNk-pf-Lnk.text" = "代理所有流量";
+
+/* Class = "UILabel"; text = "Global Mode"; ObjectID = "xef-rp-xyo"; */
+"xef-rp-xyo.text" = "全局模式";
