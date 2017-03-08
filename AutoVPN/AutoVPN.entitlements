@@ -8,5 +8,9 @@
 		<string>content-filter-provider</string>
 		<string>packet-tunnel-provider</string>
 	</array>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.gmail.czzsunset.AutoVPN</string>
+	</array>
 </dict>
 </plist>

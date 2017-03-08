@@ -15,5 +15,8 @@ let kAdapterPort = "adapter_port"
 let kAdapterServer = "adapter_server"
 
 
-let kControlServer = "http://192.168.2.200:3000"
+//let kControlServer = "http://192.168.2.200:3000"
+let kControlServer = "http://www.zcjx168.com:3000"
 let kControlUrl = kControlServer + "/service/nodes"
+
+let kAppGroupName = "group.gmail.czzsunset.AutoVPN"

@@ -101,31 +101,43 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
     }
 
     override func startTunnel(options: [String : NSObject]? = nil, completionHandler: @escaping (Error?) -> Void) {
+        
 
-        
-        
-        let setting = UserDefaults.standard
-        guard  setting.value(forKey: kAdapterType) as? String == "ss" else {
+        let setting = UserDefaults(suiteName: kAppGroupName)!
+        guard  setting.string(forKey: kAdapterType) == "ss" else {
             // currently only ss supported
             return
         }
         
-        guard let key = setting.value(forKey: kAdapterKey) as? String,
-              let method = setting.value(forKey: kAdapterMethod) as? String,
-            let port = setting.value(forKey: kAdapterPort) as? Int,
-            let host = setting.value(forKey: kAdapterServer) as? String else {
+        let port = setting.integer(forKey: kAdapterPort)
+        guard let key = setting.string(forKey: kAdapterKey) ,
+              let method = setting.string(forKey: kAdapterMethod) ,
+            
+            let host = setting.string(forKey: kAdapterServer)  else {
                 return
         }
         
-//        let ssAdapterFactory = ShadowsocksAdapterFactory(serverHost: host, serverPort: port, protocolObfuscaterFactory: <#T##ShadowsocksAdapter.ProtocolObfuscater.Factory#>, cryptorFactory: <#T##ShadowsocksAdapter.CryptoStreamProcessor.Factory#>, streamObfuscaterFactory: <#T##ShadowsocksAdapter.StreamObfuscater.Factory#>)
+        
+        
+        let ssAdapterFactory = ShadowsocksAdapterFactory(serverHost: host, serverPort: port, protocolObfuscaterFactory: ShadowsocksAdapter.ProtocolObfuscater.OriginProtocolObfuscater.Factory() , cryptorFactory:
+            ShadowsocksAdapter.CryptoStreamProcessor.Factory(password: key, algorithm: CryptoAlgorithm(rawValue: method.uppercased())!)
+            , streamObfuscaterFactory:ShadowsocksAdapter.StreamObfuscater.OriginStreamObfuscater.Factory())
+        
+
+        
+        
         
         let directAdapterFactory = DirectAdapterFactory()
-        let httpAdapterFactory = HTTPAdapterFactory(serverHost: kProxyServer, serverPort: kProxyPort, auth: nil)
+//        let httpAdapterFactory = HTTPAdapterFactory(serverHost: kProxyServer, serverPort: kProxyPort, auth: nil)
 
         let chinaRule =  CountryRule(countryCode: "CN", match: true, adapterFactory: directAdapterFactory)
-        let allRule = AllRule(adapterFactory: httpAdapterFactory)
+        let appleDomains = DomainListRule(adapterFactory: directAdapterFactory, criteria: [DomainListRule.MatchCriterion.suffix(".apple.com"), DomainListRule.MatchCriterion.suffix("icloud.com")])
         
-        let manager = RuleManager(fromRules: [chinaRule, allRule], appendDirect: true)
+
+
+        let allRule = AllRule(adapterFactory: ssAdapterFactory)
+        
+        let manager = RuleManager(fromRules: [appleDomains, chinaRule, allRule], appendDirect: true)
         
 
         RuleManager.currentManager = manager

@@ -38,21 +38,22 @@
 		CB9E14E81E54068300531821 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E14E71E54068300531821 /* ViewController.swift */; };
 		CB9E14EA1E54068300531821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9E14E91E54068300531821 /* Assets.xcassets */; };
 		CB9E14ED1E54068300531821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9E14EB1E54068300531821 /* Main.storyboard */; };
-		CB9FDDBD1E5968D900DBCDE6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBC0E0811E54BDAA00323323 /* Info.plist */; };
 		CB9FDDC01E596B6300DBCDE6 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FDDBF1E596B6300DBCDE6 /* PacketTunnelProvider.swift */; };
 		CB9FDDC41E5BDCDF00DBCDE6 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E15981E54226900531821 /* MainTableViewController.swift */; };
 		CB9FDDC61E5BDE7000DBCDE6 /* AutoVPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FDDC51E5BDE7000DBCDE6 /* AutoVPNManager.swift */; };
-		CBAF94D41E7002DD001A99A6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0478561E6FFD9900D35AEE /* Alamofire.framework */; };
 		CBAF94D51E7002DD001A99A6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB0478561E6FFD9900D35AEE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBAF94D71E701257001A99A6 /* ToastSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAF94D61E701257001A99A6 /* ToastSwiftFramework.framework */; };
-		CBAF94D91E70223A001A99A6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAF94D81E70223A001A99A6 /* SwiftyJSON.framework */; };
 		CBAF94DB1E7029DE001A99A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF94DA1E7029DE001A99A6 /* Constants.swift */; };
 		CBAF94DC1E7029DE001A99A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF94DA1E7029DE001A99A6 /* Constants.swift */; };
+		CBAF94DE1E707265001A99A6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAF94D81E70223A001A99A6 /* SwiftyJSON.framework */; };
+		CBAF94DF1E707266001A99A6 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBAF94D81E70223A001A99A6 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBAF94E11E70728E001A99A6 /* ToastSwiftFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBAF94D61E701257001A99A6 /* ToastSwiftFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBAF94E21E7074B5001A99A6 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */; };
+		CBAF94E41E707B9D001A99A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB80413B1E530CE200C451F0 /* Assets.xcassets */; };
 		CBC0E04D1E5461C800323323 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0E04C1E5461C800323323 /* PacketTunnelProvider.swift */; };
 		CBC0E0511E5461C800323323 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBC0E0481E5461C800323323 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBC0E0841E54BDAA00323323 /* PacketTunnel-mac.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBC0E07B1E54BDAA00323323 /* PacketTunnel-mac.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBD5636C1E63C2B6008F8DD4 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */; };
-		CBD85B511E6D42950049B210 /* Localize_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD85B501E6D42950049B210 /* Localize_Swift.framework */; };
 		CBD85B521E6D429E0049B210 /* Localize_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD85B501E6D42950049B210 /* Localize_Swift.framework */; };
 		CBD85B531E6D429E0049B210 /* Localize_Swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBD85B501E6D42950049B210 /* Localize_Swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBD85B5A1E6D46D40049B210 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBD85B5C1E6D46D40049B210 /* Localizable.strings */; };
@@ -165,11 +166,13 @@
 				CBE3C9F21E6191CD00ED44E5 /* Yaml.framework in Embed Frameworks */,
 				CBAF94D51E7002DD001A99A6 /* Alamofire.framework in Embed Frameworks */,
 				CBE3C9DE1E6191CD00ED44E5 /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				CBAF94DF1E707266001A99A6 /* SwiftyJSON.framework in Embed Frameworks */,
 				CBE3C9EA1E6191CD00ED44E5 /* Resolver.framework in Embed Frameworks */,
 				CBE3C9E01E6191CD00ED44E5 /* CocoaLumberjack.framework in Embed Frameworks */,
 				CBE3C9DA1E61916300ED44E5 /* SnapKit.framework in Embed Frameworks */,
 				CBE3C9E21E6191CD00ED44E5 /* CocoaLumberjackSwift.framework in Embed Frameworks */,
 				CBD85B531E6D429E0049B210 /* Localize_Swift.framework in Embed Frameworks */,
+				CBAF94E11E70728E001A99A6 /* ToastSwiftFramework.framework in Embed Frameworks */,
 				CBE3C9F01E6191CD00ED44E5 /* tun2socks.framework in Embed Frameworks */,
 				CBE3C9E81E6191CD00ED44E5 /* NEKit.framework in Embed Frameworks */,
 				CBE3C9EE1E6191CD00ED44E5 /* Sodium.framework in Embed Frameworks */,
@@ -284,7 +287,7 @@
 			files = (
 				CB5602D01E617DC100FCD577 /* tun2socks.framework in Frameworks */,
 				CBD85B521E6D429E0049B210 /* Localize_Swift.framework in Frameworks */,
-				CBAF94D91E70223A001A99A6 /* SwiftyJSON.framework in Frameworks */,
+				CBAF94DE1E707265001A99A6 /* SwiftyJSON.framework in Frameworks */,
 				CBD5636C1E63C2B6008F8DD4 /* NetworkExtension.framework in Frameworks */,
 				CBAF94D71E701257001A99A6 /* ToastSwiftFramework.framework in Frameworks */,
 				CBE3C9D91E61916300ED44E5 /* SnapKit.framework in Frameworks */,
@@ -295,11 +298,9 @@
 				CBE3C9E31E6191CD00ED44E5 /* lwip.framework in Frameworks */,
 				2BC65110A75B203FFC03FF97 /* libPods-AutoVPN.a in Frameworks */,
 				CBE3C9DF1E6191CD00ED44E5 /* CocoaLumberjack.framework in Frameworks */,
-				CBD85B511E6D42950049B210 /* Localize_Swift.framework in Frameworks */,
 				CBE3C9E71E6191CD00ED44E5 /* NEKit.framework in Frameworks */,
 				CB0478571E6FFD9900D35AEE /* Alamofire.framework in Frameworks */,
 				CB5602CE1E617DC100FCD577 /* Sodium.framework in Frameworks */,
-				CBAF94D41E7002DD001A99A6 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5602C71E617DC100FCD577 /* MMDB.framework in Frameworks */,
+				CBAF94E21E7074B5001A99A6 /* NetworkExtension.framework in Frameworks */,
 				CB5602C11E617DC100FCD577 /* CocoaLumberjack.framework in Frameworks */,
 				CB5602BF1E617DC100FCD577 /* CocoaAsyncSocket.framework in Frameworks */,
 				CB5602C51E617DC100FCD577 /* lwip.framework in Frameworks */,
@@ -573,6 +575,7 @@
 				CBC0E0581E5461C800323323 /* Embed App Extensions */,
 				D914FB05DFACC49692202A86 /* [CP] Embed Pods Frameworks */,
 				90EF010BF27DD9799ADED7E6 /* [CP] Copy Pods Resources */,
+				CBAF94E51E707BDD001A99A6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -683,7 +686,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = sunset;
 				TargetAttributes = {
 					CB80412E1E530CE100C451F0 = {
@@ -692,7 +695,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.NetworkExtensions = {
 								enabled = 1;
@@ -845,6 +848,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB9E14EA1E54068300531821 /* Assets.xcassets in Resources */,
+				CBAF94E41E707B9D001A99A6 /* Assets.xcassets in Resources */,
 				CB9E14ED1E54068300531821 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -860,7 +864,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9FDDBD1E5968D900DBCDE6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -910,6 +913,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		CBAF94E51E707BDD001A99A6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n swiftlint\nelse\n echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		D914FB05DFACC49692202A86 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1065,7 +1081,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1119,7 +1134,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

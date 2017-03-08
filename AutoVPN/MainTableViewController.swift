@@ -56,7 +56,8 @@ class MainTableViewController: UITableViewController {
                 let json = JSON(value)
 
                 if let code = json["error"]["code"].int, code != 0 {
-                    self.view.makeToast("Error: \(json["error"]["message"].stringValue)".localized())
+                    self.view.makeToast("Error: \(json["error"]["message"].stringValue)".localized(),
+                                        duration:2.0, position: .center)
                     return
                 }
                 
@@ -64,13 +65,9 @@ class MainTableViewController: UITableViewController {
                 
             case .failure(let error):
                 // error handling
-                self.view.makeToast(error.localizedDescription)
+                self.view.makeToast(error.localizedDescription, duration:2.0, position: .center)
             }
-            
-            
         })
-
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -94,17 +91,14 @@ class MainTableViewController: UITableViewController {
         
         manager.startStopVPN {
             error in
-            if let error = error {
-                
+            if let error = error {                
                 DDLogError("start VPN error:\(error)")
             }
-
         }
-        
     }
     
     func setAdapter(json: JSON){
-        let userDefault = UserDefaults.standard
+        let userDefault = UserDefaults(suiteName: kAppGroupName)!
         userDefault.set(json["adapter"].stringValue, forKey: kAdapterType)
         userDefault.set(json["key"].stringValue, forKey: kAdapterKey)
         userDefault.set(json["method"].stringValue , forKey: kAdapterMethod)
