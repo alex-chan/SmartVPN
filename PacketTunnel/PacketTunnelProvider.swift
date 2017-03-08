@@ -104,6 +104,21 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
         
         
+        let setting = UserDefaults.standard
+        guard  setting.value(forKey: kAdapterType) as? String == "ss" else {
+            // currently only ss supported
+            return
+        }
+        
+        guard let key = setting.value(forKey: kAdapterKey) as? String,
+              let method = setting.value(forKey: kAdapterMethod) as? String,
+            let port = setting.value(forKey: kAdapterPort) as? Int,
+            let host = setting.value(forKey: kAdapterServer) as? String else {
+                return
+        }
+        
+//        let ssAdapterFactory = ShadowsocksAdapterFactory(serverHost: host, serverPort: port, protocolObfuscaterFactory: <#T##ShadowsocksAdapter.ProtocolObfuscater.Factory#>, cryptorFactory: <#T##ShadowsocksAdapter.CryptoStreamProcessor.Factory#>, streamObfuscaterFactory: <#T##ShadowsocksAdapter.StreamObfuscater.Factory#>)
+        
         let directAdapterFactory = DirectAdapterFactory()
         let httpAdapterFactory = HTTPAdapterFactory(serverHost: kProxyServer, serverPort: kProxyPort, auth: nil)
 

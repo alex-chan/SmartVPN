@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BC65110A75B203FFC03FF97 /* libPods-AutoVPN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0801A974D553B9DBBE0B1F5B /* libPods-AutoVPN.a */; };
+		CB0478571E6FFD9900D35AEE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0478561E6FFD9900D35AEE /* Alamofire.framework */; };
 		CB432B081E608478009436CC /* ProxyModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB432B071E608478009436CC /* ProxyModeViewController.swift */; };
 		CB432B0E1E61391F009436CC /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB432B0D1E61391F009436CC /* PurchaseViewController.swift */; };
 		CB432B131E615F70009436CC /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB432B121E615F70009436CC /* PurchaseCell.swift */; };
@@ -41,6 +42,12 @@
 		CB9FDDC01E596B6300DBCDE6 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FDDBF1E596B6300DBCDE6 /* PacketTunnelProvider.swift */; };
 		CB9FDDC41E5BDCDF00DBCDE6 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E15981E54226900531821 /* MainTableViewController.swift */; };
 		CB9FDDC61E5BDE7000DBCDE6 /* AutoVPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FDDC51E5BDE7000DBCDE6 /* AutoVPNManager.swift */; };
+		CBAF94D41E7002DD001A99A6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0478561E6FFD9900D35AEE /* Alamofire.framework */; };
+		CBAF94D51E7002DD001A99A6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB0478561E6FFD9900D35AEE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBAF94D71E701257001A99A6 /* ToastSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAF94D61E701257001A99A6 /* ToastSwiftFramework.framework */; };
+		CBAF94D91E70223A001A99A6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAF94D81E70223A001A99A6 /* SwiftyJSON.framework */; };
+		CBAF94DB1E7029DE001A99A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF94DA1E7029DE001A99A6 /* Constants.swift */; };
+		CBAF94DC1E7029DE001A99A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF94DA1E7029DE001A99A6 /* Constants.swift */; };
 		CBC0E04D1E5461C800323323 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0E04C1E5461C800323323 /* PacketTunnelProvider.swift */; };
 		CBC0E0511E5461C800323323 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBC0E0481E5461C800323323 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBC0E0841E54BDAA00323323 /* PacketTunnel-mac.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBC0E07B1E54BDAA00323323 /* PacketTunnel-mac.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -156,6 +163,7 @@
 			files = (
 				CBE3C9E41E6191CD00ED44E5 /* lwip.framework in Embed Frameworks */,
 				CBE3C9F21E6191CD00ED44E5 /* Yaml.framework in Embed Frameworks */,
+				CBAF94D51E7002DD001A99A6 /* Alamofire.framework in Embed Frameworks */,
 				CBE3C9DE1E6191CD00ED44E5 /* CocoaAsyncSocket.framework in Embed Frameworks */,
 				CBE3C9EA1E6191CD00ED44E5 /* Resolver.framework in Embed Frameworks */,
 				CBE3C9E01E6191CD00ED44E5 /* CocoaLumberjack.framework in Embed Frameworks */,
@@ -208,6 +216,7 @@
 		0801A974D553B9DBBE0B1F5B /* libPods-AutoVPN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoVPN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55213DAA1B218F835249EC09 /* Pods-AutoVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoVPN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoVPN/Pods-AutoVPN.debug.xcconfig"; sourceTree = "<group>"; };
 		C8DFB8FE27B73777638381A7 /* Pods-AutoVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoVPN.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoVPN/Pods-AutoVPN.release.xcconfig"; sourceTree = "<group>"; };
+		CB0478561E6FFD9900D35AEE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		CB432B071E608478009436CC /* ProxyModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyModeViewController.swift; sourceTree = "<group>"; };
 		CB432B0D1E61391F009436CC /* PurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		CB432B121E615F70009436CC /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
@@ -245,6 +254,10 @@
 		CB9FDDBE1E596B6300DBCDE6 /* PacketTunnel-mac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PacketTunnel-mac-Bridging-Header.h"; sourceTree = "<group>"; };
 		CB9FDDBF1E596B6300DBCDE6 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
 		CB9FDDC51E5BDE7000DBCDE6 /* AutoVPNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoVPNManager.swift; sourceTree = "<group>"; };
+		CBAF94D31E6FFF1C001A99A6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		CBAF94D61E701257001A99A6 /* ToastSwiftFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ToastSwiftFramework.framework; sourceTree = "<group>"; };
+		CBAF94D81E70223A001A99A6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
+		CBAF94DA1E7029DE001A99A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CBC0E0481E5461C800323323 /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC0E04B1E5461C800323323 /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
 		CBC0E04C1E5461C800323323 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
@@ -271,7 +284,9 @@
 			files = (
 				CB5602D01E617DC100FCD577 /* tun2socks.framework in Frameworks */,
 				CBD85B521E6D429E0049B210 /* Localize_Swift.framework in Frameworks */,
+				CBAF94D91E70223A001A99A6 /* SwiftyJSON.framework in Frameworks */,
 				CBD5636C1E63C2B6008F8DD4 /* NetworkExtension.framework in Frameworks */,
+				CBAF94D71E701257001A99A6 /* ToastSwiftFramework.framework in Frameworks */,
 				CBE3C9D91E61916300ED44E5 /* SnapKit.framework in Frameworks */,
 				CB5602C21E617DC100FCD577 /* CocoaLumberjackSwift.framework in Frameworks */,
 				CB5602BE1E617DC100FCD577 /* CocoaAsyncSocket.framework in Frameworks */,
@@ -282,7 +297,9 @@
 				CBE3C9DF1E6191CD00ED44E5 /* CocoaLumberjack.framework in Frameworks */,
 				CBD85B511E6D42950049B210 /* Localize_Swift.framework in Frameworks */,
 				CBE3C9E71E6191CD00ED44E5 /* NEKit.framework in Frameworks */,
+				CB0478571E6FFD9900D35AEE /* Alamofire.framework in Frameworks */,
 				CB5602CE1E617DC100FCD577 /* Sodium.framework in Frameworks */,
+				CBAF94D41E7002DD001A99A6 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +361,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CB0478421E6FF95F00D35AEE /* playground */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF94D31E6FFF1C001A99A6 /* MyPlayground.playground */,
+			);
+			path = playground;
+			sourceTree = "<group>";
+		};
 		CB8041261E530CE100C451F0 = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +414,7 @@
 				CB432B071E608478009436CC /* ProxyModeViewController.swift */,
 				CB432B0D1E61391F009436CC /* PurchaseViewController.swift */,
 				CB432B121E615F70009436CC /* PurchaseCell.swift */,
+				CBAF94DA1E7029DE001A99A6 /* Constants.swift */,
 			);
 			path = AutoVPN;
 			sourceTree = "<group>";
@@ -458,6 +484,9 @@
 		CB9E15771E540A5B00531821 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CBAF94D81E70223A001A99A6 /* SwiftyJSON.framework */,
+				CBAF94D61E701257001A99A6 /* ToastSwiftFramework.framework */,
+				CB0478561E6FFD9900D35AEE /* Alamofire.framework */,
 				CBD85B501E6D42950049B210 /* Localize_Swift.framework */,
 				CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */,
 				CB5602B31E617DC100FCD577 /* CocoaAsyncSocket.framework */,
@@ -515,6 +544,7 @@
 		CBD563711E63C5C6008F8DD4 /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				CB0478421E6FF95F00D35AEE /* playground */,
 				CBD85B421E6CFB370049B210 /* Proxy */,
 			);
 			path = Res;
@@ -907,6 +937,7 @@
 				CB9FDDC41E5BDCDF00DBCDE6 /* MainTableViewController.swift in Sources */,
 				CB432B131E615F70009436CC /* PurchaseCell.swift in Sources */,
 				CB432B081E608478009436CC /* ProxyModeViewController.swift in Sources */,
+				CBAF94DB1E7029DE001A99A6 /* Constants.swift in Sources */,
 				CB432B0E1E61391F009436CC /* PurchaseViewController.swift in Sources */,
 				CB8041331E530CE100C451F0 /* AppDelegate.swift in Sources */,
 			);
@@ -942,6 +973,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBC0E04D1E5461C800323323 /* PacketTunnelProvider.swift in Sources */,
+				CBAF94DC1E7029DE001A99A6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1031,6 +1063,7 @@
 		CB8041571E530CE200C451F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -1084,6 +1117,7 @@
 		CB8041581E530CE200C451F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -1107,6 +1141,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

@@ -13,6 +13,9 @@ import NetworkExtension
 import NEKit
 import CocoaLumberjackSwift
 import Localize_Swift
+import Alamofire
+import ToastSwiftFramework
+import SwiftyJSON
 
 
 class MainTableViewController: UITableViewController {
@@ -43,6 +46,30 @@ class MainTableViewController: UITableViewController {
         actionCell.selectionStyle = .none
         
         statusLabel.text = "Free Currently".localized()
+        
+        Alamofire.request(kControlUrl, method: .post).responseJSON(completionHandler: {
+            response in
+            print(response)
+            
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+
+                if let code = json["error"]["code"].int, code != 0 {
+                    self.view.makeToast("Error: \(json["error"]["message"].stringValue)".localized())
+                    return
+                }
+                
+                self.setAdapter(json: json["result"][0])
+                
+            case .failure(let error):
+                // error handling
+                self.view.makeToast(error.localizedDescription)
+            }
+            
+            
+        })
+
 
     }
 
@@ -74,6 +101,17 @@ class MainTableViewController: UITableViewController {
 
         }
         
+    }
+    
+    func setAdapter(json: JSON){
+        let userDefault = UserDefaults.standard
+        userDefault.set(json["adapter"].stringValue, forKey: kAdapterType)
+        userDefault.set(json["key"].stringValue, forKey: kAdapterKey)
+        userDefault.set(json["method"].stringValue , forKey: kAdapterMethod)
+        userDefault.set(json["port"].intValue, forKey: kAdapterPort)
+        userDefault.set(json["server"].stringValue, forKey: kAdapterServer)
+        userDefault.synchronize()
+
     }
     
     
