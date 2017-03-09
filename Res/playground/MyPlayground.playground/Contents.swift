@@ -18,5 +18,4 @@ import UIKit
 //})
 
 
-var a = ["a": 3]
-print(a["a"])
+ let diceRoll = Int(arc4random_uniform(6) + 1)

@@ -27,13 +27,17 @@ class MainTableViewController: UITableViewController {
     @IBOutlet weak var bannerAd: GADBannerView!
     
     let manager = AutoVPNManager()
-   
-     
+    
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bannerAd.isHidden  = true
+        
+        bannerAd.adUnitID = kAdUnitId
+        bannerAd.rootViewController = self
+        bannerAd.load(GADRequest())
        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -45,12 +49,7 @@ class MainTableViewController: UITableViewController {
         manager.delegate = self
         
         actionCell.selectionStyle = .none
-        
-        statusLabel.text = "Free Currently".localized()
-        
-        bannerAd.adUnitID = kAdUnitId
-        bannerAd.rootViewController = self
-        bannerAd.load(GADRequest())
+        statusLabel.text = "Remain free dataflow: unlimited".localized()
         
         Alamofire.request(kControlUrl, method: .post).responseJSON(completionHandler: {
             response in
@@ -65,13 +64,17 @@ class MainTableViewController: UITableViewController {
                                         duration:2.0, position: .center)
                     return
                 }
-                
-                self.setAdapter(json: json["result"][0])
+                let randomSelectServer = Int(arc4random_uniform(UInt32(json["result"].arrayValue.count)) )
+                self.setAdapter(json: json["result"][randomSelectServer])
                 
             case .failure(let error):
                 // error handling
                 self.view.makeToast(error.localizedDescription, duration:2.0, position: .center)
             }
+            
+            
+            self.bannerAd.isHidden = false
+
         })
     }
 
