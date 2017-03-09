@@ -1,4 +1,4 @@
-github "alex-chan/tun2socks"
+github "alex-chan/tun2socks" "master"
 github "zhuhaow/NEKit"
 github "SnapKit/SnapKit" ~> 3.2.0
 github "marmelroy/Localize-Swift"
@@ -8,3 +8,4 @@ github "Alamofire/Alamofire" ~> 4.4
 github "scalessec/Toast-Swift" ~> 2.0.0
 
 github "SwiftyJSON/SwiftyJSON"
+

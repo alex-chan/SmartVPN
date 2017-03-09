@@ -20,3 +20,8 @@ let kControlServer = "http://www.zcjx168.com:3000"
 let kControlUrl = kControlServer + "/service/nodes"
 
 let kAppGroupName = "group.gmail.czzsunset.AutoVPN"
+
+
+
+let kAdUnitId = "ca-app-pub-5471399010797318/7034487589"
+let kAdAppId = "ca-app-pub-5471399010797318~5557754388"

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2BC65110A75B203FFC03FF97 /* libPods-AutoVPN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0801A974D553B9DBBE0B1F5B /* libPods-AutoVPN.a */; };
 		CB0478571E6FFD9900D35AEE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0478561E6FFD9900D35AEE /* Alamofire.framework */; };
+		CB19F8071E7119B3008CC0F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */; };
 		CB432B081E608478009436CC /* ProxyModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB432B071E608478009436CC /* ProxyModeViewController.swift */; };
 		CB432B0E1E61391F009436CC /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB432B0D1E61391F009436CC /* PurchaseViewController.swift */; };
 		CB432B131E615F70009436CC /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB432B121E615F70009436CC /* PurchaseCell.swift */; };
@@ -220,6 +221,7 @@
 		55213DAA1B218F835249EC09 /* Pods-AutoVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoVPN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoVPN/Pods-AutoVPN.debug.xcconfig"; sourceTree = "<group>"; };
 		C8DFB8FE27B73777638381A7 /* Pods-AutoVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoVPN.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoVPN/Pods-AutoVPN.release.xcconfig"; sourceTree = "<group>"; };
 		CB0478561E6FFD9900D35AEE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB432B071E608478009436CC /* ProxyModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyModeViewController.swift; sourceTree = "<group>"; };
 		CB432B0D1E61391F009436CC /* PurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		CB432B121E615F70009436CC /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
@@ -546,6 +548,7 @@
 		CBD563711E63C5C6008F8DD4 /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */,
 				CB0478421E6FF95F00D35AEE /* playground */,
 				CBD85B421E6CFB370049B210 /* Proxy */,
 			);
@@ -575,7 +578,6 @@
 				CBC0E0581E5461C800323323 /* Embed App Extensions */,
 				D914FB05DFACC49692202A86 /* [CP] Embed Pods Frameworks */,
 				90EF010BF27DD9799ADED7E6 /* [CP] Copy Pods Resources */,
-				CBAF94E51E707BDD001A99A6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -824,6 +826,7 @@
 			files = (
 				CB80413F1E530CE200C451F0 /* LaunchScreen.storyboard in Resources */,
 				CBD85B5A1E6D46D40049B210 /* Localizable.strings in Resources */,
+				CB19F8071E7119B3008CC0F2 /* GoogleService-Info.plist in Resources */,
 				CB80413C1E530CE200C451F0 /* Assets.xcassets in Resources */,
 				CB80413A1E530CE200C451F0 /* Main.storyboard in Resources */,
 			);
@@ -913,19 +916,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		CBAF94E51E707BDD001A99A6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n swiftlint\nelse\n echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		D914FB05DFACC49692202A86 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

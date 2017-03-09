@@ -16,7 +16,7 @@ import Localize_Swift
 import Alamofire
 import ToastSwiftFramework
 import SwiftyJSON
-
+import GoogleMobileAds
 
 class MainTableViewController: UITableViewController {
     
@@ -24,6 +24,7 @@ class MainTableViewController: UITableViewController {
     @IBOutlet weak var actionCell: UITableViewCell!
     @IBOutlet weak var statusLabel: UILabel!
     
+    @IBOutlet weak var bannerAd: GADBannerView!
     
     let manager = AutoVPNManager()
    
@@ -46,6 +47,10 @@ class MainTableViewController: UITableViewController {
         actionCell.selectionStyle = .none
         
         statusLabel.text = "Free Currently".localized()
+        
+        bannerAd.adUnitID = kAdUnitId
+        bannerAd.rootViewController = self
+        bannerAd.load(GADRequest())
         
         Alamofire.request(kControlUrl, method: .post).responseJSON(completionHandler: {
             response in

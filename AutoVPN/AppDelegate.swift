@@ -5,7 +5,7 @@
 //  Created by Alex Chan on 2017/2/14.
 //  Copyright © 2017年 sunset. All rights reserved.
 //
-
+import Firebase
 import UIKit
 
 @UIApplicationMain
@@ -20,6 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 //        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
 //        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
 //        splitViewController.delegate = self
+        // Use Firebase library to configure APIs
+        FIRApp.configure()
+        // Initialize Google Mobile Ads SDK
+        GADMobileAds.configure(withApplicationID: kAdAppId)
+
         return true
     }
 

@@ -71,7 +71,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
                 NEIPv4Route(destinationAddress: "127.0.0.0", subnetMask: "255.0.0.0"),
                 NEIPv4Route(destinationAddress: "169.254.0.0", subnetMask: "255.255.0.0"),
                 NEIPv4Route(destinationAddress: "172.16.0.0", subnetMask: "255.240.0.0"),
-//                NEIPv4Route(destinationAddress: "192.168.0.0", subnetMask: "255.255.0.0"),
+                NEIPv4Route(destinationAddress: "192.168.0.0", subnetMask: "255.255.0.0"),
             ]
         
         networkSettings.iPv4Settings = ipv4Settings
@@ -161,8 +161,6 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
                 completionHandler(error)
                 return
             }
-            
-            
             
             self.interface = TUNInterface(packetFlow: self.packetFlow)
             
