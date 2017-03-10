@@ -11,6 +11,10 @@
 		CB0478571E6FFD9900D35AEE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0478561E6FFD9900D35AEE /* Alamofire.framework */; };
 		CB19F8071E7119B3008CC0F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */; };
 		CB19F81D1E712E8F008CC0F2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19F81C1E712E8F008CC0F2 /* AboutViewController.swift */; };
+		CB19F8201E7290B7008CC0F2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19F81F1E7290B7008CC0F2 /* Extensions.swift */; };
+		CB19F8231E7293BF008CC0F2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB19F8221E7293BF008CC0F2 /* CryptoSwift.framework */; };
+		CB19F8241E729B9C008CC0F2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB19F8221E7293BF008CC0F2 /* CryptoSwift.framework */; };
+		CB19F8251E729B9C008CC0F2 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB19F8221E7293BF008CC0F2 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB432B081E608478009436CC /* ProxyModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB432B071E608478009436CC /* ProxyModeViewController.swift */; };
 		CB432B0E1E61391F009436CC /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB432B0D1E61391F009436CC /* PurchaseViewController.swift */; };
 		CB432B131E615F70009436CC /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB432B121E615F70009436CC /* PurchaseCell.swift */; };
@@ -179,6 +183,7 @@
 				CBE3C9E81E6191CD00ED44E5 /* NEKit.framework in Embed Frameworks */,
 				CBE3C9EE1E6191CD00ED44E5 /* Sodium.framework in Embed Frameworks */,
 				CBE3C9E61E6191CD00ED44E5 /* MMDB.framework in Embed Frameworks */,
+				CB19F8251E729B9C008CC0F2 /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +229,8 @@
 		CB0478561E6FFD9900D35AEE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB19F81C1E712E8F008CC0F2 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CB19F81F1E7290B7008CC0F2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CB19F8221E7293BF008CC0F2 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = "<group>"; };
 		CB432B071E608478009436CC /* ProxyModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyModeViewController.swift; sourceTree = "<group>"; };
 		CB432B0D1E61391F009436CC /* PurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		CB432B121E615F70009436CC /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
@@ -291,6 +298,8 @@
 			files = (
 				CB5602D01E617DC100FCD577 /* tun2socks.framework in Frameworks */,
 				CBD85B521E6D429E0049B210 /* Localize_Swift.framework in Frameworks */,
+				CB19F8231E7293BF008CC0F2 /* CryptoSwift.framework in Frameworks */,
+				CB19F8241E729B9C008CC0F2 /* CryptoSwift.framework in Frameworks */,
 				CBAF94DE1E707265001A99A6 /* SwiftyJSON.framework in Frameworks */,
 				CBD5636C1E63C2B6008F8DD4 /* NetworkExtension.framework in Frameworks */,
 				CBAF94D71E701257001A99A6 /* ToastSwiftFramework.framework in Frameworks */,
@@ -422,6 +431,7 @@
 				CB432B121E615F70009436CC /* PurchaseCell.swift */,
 				CBAF94DA1E7029DE001A99A6 /* Constants.swift */,
 				CB19F81C1E712E8F008CC0F2 /* AboutViewController.swift */,
+				CB19F81F1E7290B7008CC0F2 /* Extensions.swift */,
 			);
 			path = AutoVPN;
 			sourceTree = "<group>";
@@ -491,6 +501,7 @@
 		CB9E15771E540A5B00531821 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CB19F8221E7293BF008CC0F2 /* CryptoSwift.framework */,
 				CBAF94D81E70223A001A99A6 /* SwiftyJSON.framework */,
 				CBAF94D61E701257001A99A6 /* ToastSwiftFramework.framework */,
 				CB0478561E6FFD9900D35AEE /* Alamofire.framework */,
@@ -943,6 +954,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB9FDDC61E5BDE7000DBCDE6 /* AutoVPNManager.swift in Sources */,
+				CB19F8201E7290B7008CC0F2 /* Extensions.swift in Sources */,
 				CB9FDDC41E5BDCDF00DBCDE6 /* MainTableViewController.swift in Sources */,
 				CB432B131E615F70009436CC /* PurchaseCell.swift in Sources */,
 				CB432B081E608478009436CC /* ProxyModeViewController.swift in Sources */,

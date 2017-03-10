@@ -9,3 +9,5 @@ github "scalessec/Toast-Swift" ~> 2.0.0
 
 github "SwiftyJSON/SwiftyJSON"
 
+
+github "krzyzanowskim/CryptoSwift"

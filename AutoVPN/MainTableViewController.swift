@@ -107,17 +107,22 @@ class MainTableViewController: UITableViewController {
     
     func setAdapter(json: JSON){
         let userDefault = UserDefaults(suiteName: kAppGroupName)!
+        
+        guard let key = json["key"].stringValue.aes256_decrypt(key: kAesKey),
+            let server = json["server"].stringValue.aes256_decrypt(key: kAesKey) else {
+            DDLogError("Decrypt data from server failed")
+            view.makeToast("Decrypt data from server failed".localized(), duration: 1.5, position: .center)
+            return
+        }
+        
         userDefault.set(json["adapter"].stringValue, forKey: kAdapterType)
-        userDefault.set(json["key"].stringValue, forKey: kAdapterKey)
+        userDefault.set(key, forKey: kAdapterKey)
         userDefault.set(json["method"].stringValue , forKey: kAdapterMethod)
         userDefault.set(json["port"].intValue, forKey: kAdapterPort)
-        userDefault.set(json["server"].stringValue, forKey: kAdapterServer)
+        userDefault.set(server, forKey: kAdapterServer)
         userDefault.synchronize()
 
     }
-    
-    
-
     
  }
 
