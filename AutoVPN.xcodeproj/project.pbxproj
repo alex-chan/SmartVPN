@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BC65110A75B203FFC03FF97 /* libPods-AutoVPN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0801A974D553B9DBBE0B1F5B /* libPods-AutoVPN.a */; };
+		16CEADC013BC465BA1E09EFC /* Pods_AutoVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FEB0E1965CF6F0280B2A47 /* Pods_AutoVPN.framework */; };
 		CB0478571E6FFD9900D35AEE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0478561E6FFD9900D35AEE /* Alamofire.framework */; };
 		CB19F8071E7119B3008CC0F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */; };
 		CB19F81D1E712E8F008CC0F2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19F81C1E712E8F008CC0F2 /* AboutViewController.swift */; };
@@ -223,8 +223,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0801A974D553B9DBBE0B1F5B /* libPods-AutoVPN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoVPN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08FEB0E1965CF6F0280B2A47 /* Pods_AutoVPN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoVPN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D62B540D34892C5368541C /* Pods_AutoVPNUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoVPNUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55213DAA1B218F835249EC09 /* Pods-AutoVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoVPN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoVPN/Pods-AutoVPN.debug.xcconfig"; sourceTree = "<group>"; };
+		9848E647C7B40DE800046B07 /* Pods_AutoVPN_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoVPN_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8D2A56A6B8E6E3E61822D0 /* Pods_AutoVPNTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoVPNTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DFB8FE27B73777638381A7 /* Pods-AutoVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoVPN.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoVPN/Pods-AutoVPN.release.xcconfig"; sourceTree = "<group>"; };
 		CB0478561E6FFD9900D35AEE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -289,6 +292,8 @@
 		CBD85B5D1E6D47080049B210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CBD85B5E1E6D471C0049B210 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
+		E3C8BC9CBBE115133F0193B3 /* Pods_PacketTunnel_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PacketTunnel_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72C53AF90956843D2DAA0AD /* Pods_PacketTunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PacketTunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,11 +314,11 @@
 				CB5602D21E617DC100FCD577 /* Yaml.framework in Frameworks */,
 				CBE3C9E51E6191CD00ED44E5 /* MMDB.framework in Frameworks */,
 				CBE3C9E31E6191CD00ED44E5 /* lwip.framework in Frameworks */,
-				2BC65110A75B203FFC03FF97 /* libPods-AutoVPN.a in Frameworks */,
 				CBE3C9DF1E6191CD00ED44E5 /* CocoaLumberjack.framework in Frameworks */,
 				CBE3C9E71E6191CD00ED44E5 /* NEKit.framework in Frameworks */,
 				CB0478571E6FFD9900D35AEE /* Alamofire.framework in Frameworks */,
 				CB5602CE1E617DC100FCD577 /* Sodium.framework in Frameworks */,
+				16CEADC013BC465BA1E09EFC /* Pods_AutoVPN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +465,12 @@
 				CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */,
 				CB9E15771E540A5B00531821 /* iOS */,
 				CB9E15301E5408F200531821 /* macOS */,
-				0801A974D553B9DBBE0B1F5B /* libPods-AutoVPN.a */,
+				08FEB0E1965CF6F0280B2A47 /* Pods_AutoVPN.framework */,
+				9848E647C7B40DE800046B07 /* Pods_AutoVPN_mac.framework */,
+				BB8D2A56A6B8E6E3E61822D0 /* Pods_AutoVPNTests.framework */,
+				36D62B540D34892C5368541C /* Pods_AutoVPNUITests.framework */,
+				F72C53AF90956843D2DAA0AD /* Pods_PacketTunnel.framework */,
+				E3C8BC9CBBE115133F0193B3 /* Pods_PacketTunnel_mac.framework */,
 			);
 			name = Frameworks;
 			path = Framework;
@@ -587,9 +597,9 @@
 				CB80412B1E530CE100C451F0 /* Sources */,
 				CB80412C1E530CE100C451F0 /* Frameworks */,
 				CB80412D1E530CE100C451F0 /* Resources */,
-				CB9E14CB1E53F0B900531821 /* ShellScript */,
 				CB9E14D91E54053A00531821 /* Embed Frameworks */,
 				CBC0E0581E5461C800323323 /* Embed App Extensions */,
+				CB9E14CB1E53F0B900531821 /* ShellScript */,
 				D914FB05DFACC49692202A86 /* [CP] Embed Pods Frameworks */,
 				90EF010BF27DD9799ADED7E6 /* [CP] Copy Pods Resources */,
 			);
@@ -1221,6 +1231,7 @@
 				);
 				INFOPLIST_FILE = AutoVPN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1350,7 +1361,7 @@
 					"$(PROJECT_DIR)/Framework/iOS",
 				);
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPN.PacketTunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1373,7 +1384,7 @@
 					"$(PROJECT_DIR)/Framework/iOS",
 				);
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPN.PacketTunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";

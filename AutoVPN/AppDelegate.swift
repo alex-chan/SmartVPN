@@ -6,6 +6,7 @@
 //  Copyright © 2017年 sunset. All rights reserved.
 //
 import Firebase
+import GoogleMobileAds
 import UIKit
 
 @UIApplicationMain
