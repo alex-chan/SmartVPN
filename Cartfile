@@ -1,5 +1,5 @@
 github "alex-chan/tun2socks" "master"
-github "zhuhaow/NEKit"
+github "alex-chan/NEKit" "master"
 github "SnapKit/SnapKit" ~> 3.2.0
 github "marmelroy/Localize-Swift"
 

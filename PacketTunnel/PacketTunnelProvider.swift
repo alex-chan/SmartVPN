@@ -22,8 +22,8 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
     override init() {
         super.init()
         
-        DDLog.add(DDASLLogger.sharedInstance()) // ASL = Apple System Logs
-        DDLog.add(DDTTYLogger.sharedInstance()) // TTY = Xcode console
+        DDLog.add(DDASLLogger.sharedInstance) // ASL = Apple System Logs
+        DDLog.add(DDTTYLogger.sharedInstance) // TTY = Xcode console
     }
     
     deinit {

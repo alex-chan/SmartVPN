@@ -45,7 +45,7 @@ class MainTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        DDLog.add(DDTTYLogger.sharedInstance()) // TTY = Xcode console
+        DDLog.add(DDTTYLogger.sharedInstance) // TTY = Xcode console
         manager.delegate = self
         
         actionCell.selectionStyle = .none
@@ -101,6 +101,7 @@ class MainTableViewController: UITableViewController {
             error in
             if let error = error {                
                 DDLogError("start VPN error:\(error)")
+                self.view.makeToast("start VPN error:\(error.localizedDescription)".localized(), duration: 2.0, position: .center)
             }
         }
     }
