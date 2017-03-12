@@ -15,13 +15,13 @@ enum ProxyServerStatus: Int, CustomStringConvertible {
     var description: String {
         switch self {
         case .disconnected:
-            return "Disconnected"
+            return "Disconnected".localized()
         case .connecting:
-            return "Connecting..."
+            return "Connecting...".localized()
         case .connected:
-            return "Connected"
+            return "Connected".localized()
         case .disconnecting:
-            return "Disconnecting..."
+            return "Disconnecting...".localized()
         }
     }
 }

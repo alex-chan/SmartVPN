@@ -8,6 +8,7 @@
 import Firebase
 import GoogleMobileAds
 import UIKit
+import Flurry_iOS_SDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
@@ -25,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         FIRApp.configure()
         // Initialize Google Mobile Ads SDK
         GADMobileAds.configure(withApplicationID: kAdAppId)
+        
+        Flurry.startSession(kFlurryKey)
 
         return true
     }

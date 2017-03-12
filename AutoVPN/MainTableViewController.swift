@@ -101,7 +101,8 @@ class MainTableViewController: UITableViewController {
             error in
             if let error = error {                
                 DDLogError("start VPN error:\(error)")
-                self.view.makeToast("start VPN error:\(error.localizedDescription)".localized(), duration: 2.0, position: .center)
+                let errmsg = "start VPN error:".localized()
+                self.view.makeToast( errmsg + error.localizedDescription, duration: 2.0, position: .center)
             }
         }
     }

@@ -117,14 +117,9 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
                 return
         }
         
-        
-        
         let ssAdapterFactory = ShadowsocksAdapterFactory(serverHost: host, serverPort: port, protocolObfuscaterFactory: ShadowsocksAdapter.ProtocolObfuscater.OriginProtocolObfuscater.Factory() , cryptorFactory:
             ShadowsocksAdapter.CryptoStreamProcessor.Factory(password: key, algorithm: CryptoAlgorithm(rawValue: method.uppercased())!)
             , streamObfuscaterFactory:ShadowsocksAdapter.StreamObfuscater.OriginStreamObfuscater.Factory())
-        
-
-        
         
         
         let directAdapterFactory = DirectAdapterFactory()
@@ -134,8 +129,8 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         let appleDomains = DomainListRule(adapterFactory: directAdapterFactory, criteria: [DomainListRule.MatchCriterion.suffix(".apple.com"), DomainListRule.MatchCriterion.suffix("icloud.com")])
         
 
-
         let allRule = AllRule(adapterFactory: ssAdapterFactory)
+        
         
         let manager = RuleManager(fromRules: [appleDomains, chinaRule, allRule], appendDirect: true)
         
@@ -178,13 +173,8 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             self.interface.register(stack: UDPDirectStack())
             self.interface.register(stack: tcpStack)
             
-
-            
             self.interface.start()
         })
-        
-
-
 
     }
     
@@ -197,9 +187,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         server.stop()
         server = nil
   
-        RawSocketFactory.TunnelProvider = nil
-        
-        
+        RawSocketFactory.TunnelProvider = nil                
         
         completionHandler()
         

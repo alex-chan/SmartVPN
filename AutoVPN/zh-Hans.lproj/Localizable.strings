@@ -7,3 +7,9 @@
 */
 
 "Remain free dataflow: unlimited" = "剩余免费流量：不限";
+"Connected" = "已连接";
+"Connecting..." = "连接中...";
+"Decrypt data from server failed" = "解密从服务器返回的数据失败";
+"Disconnected" = "已断开";
+"Disconnecting..." = "断开中...";
+"start VPN error:" = "启动VPN错误：";

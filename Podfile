@@ -9,6 +9,7 @@ target 'AutoVPN' do
   pod 'Reveal-SDK', '<= 4.0' ,:configurations => ['Debug']
   pod 'Firebase/Core'
   pod 'Firebase/AdMob'  
+  pod 'Flurry-iOS-SDK/FlurrySDK' #Analytics Pod
 end
 
 

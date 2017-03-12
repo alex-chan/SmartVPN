@@ -7,3 +7,9 @@
 */
 
 "Remain free dataflow: unlimited" = "Remain free dataflow: Unlimited";
+"Connected" = "Connected";
+"Connecting..." = "Connecting...";
+"Decrypt data from server failed" = "Decrypt data from server failed";
+"Disconnected" = "Disconnected";
+"Disconnecting..." = "Disconnecting...";
+"start VPN error:" = "Start VPN error:";
