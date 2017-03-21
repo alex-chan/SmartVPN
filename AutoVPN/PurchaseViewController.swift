@@ -9,42 +9,97 @@
 import UIKit
 import CocoaLumberjackSwift
 import SnapKit
+import StoreKit
 
 private let kPURCHASE_CELL = "kPURCHASE_CELL"
 
 
 class PurchaseViewController: UITableViewController {
 
-    let dataSources = [
-        [
-            "title": "One-time purchase",
-            "values" : ["10G(Month) $3.99/Once", "60G(Half-Year) $18.99/Once"]
-        ],
-        [
-             "title":"Mini Subscription",
-             "values": ["3G $0.99/Month", "20G $5.49/Half-Year"]
-        ],[
-            "title":"Classic Subscription",
-            "values": ["10G $2.99/Month", "60G $16.99/Half-Year"]
-        ]
+//    let dataSources = [
+//        [
+//            "title": "One-time purchase",
+//            "values" : ["10G(Month) $3.99/Once", "60G(Half-Year) $18.99/Once"]
+//        ],
+//        [
+//             "title":"Mini Subscription",
+//             "values": ["3G $0.99/Month", "20G $5.49/Half-Year"]
+//        ],[
+//            "title":"Classic Subscription",
+//            "values": ["10G $2.99/Month", "60G $16.99/Half-Year"]
+//        ]
+//        
+//    ]
+    static let priceFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
         
-    ]
+        formatter.formatterBehavior = .behavior10_4
+        formatter.numberStyle = .currency
+        
+        return formatter
+    }()
+    
+    var iap = IAPHelper(productIds: [kIAPmonth1])
+    
+    var products = [SKProduct]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+        let restoreButton = UIBarButtonItem(title: "Restore",
+                                            style: .plain,
+                                            target: self,
+                                            action: #selector(PurchaseViewController.restoreTapped(_:)))
+        navigationItem.rightBarButtonItem = restoreButton
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(PurchaseViewController.handlePurchaseNotification(_:)),
+                                               name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseNotification),
+                                               object: nil)
+
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+        iap.requestProducts {
+            success, products in
+            if success {
+                self.products = products!
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
+    func restoreTapped(_ sender: AnyObject) {
+        iap.restorePurchases()
+    }
+    
+    func handlePurchaseNotification(_ notification: Notification) {
+        guard let productID = notification.object as? String else { return }
+        
+        for (index, product) in products.enumerated() {
+            guard product.productIdentifier == productID else { continue }
+            
+            tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .fade)
+        }
+    }
+    
+    
+}
+// MARK: - UITableViewDataSource
+
+extension PurchaseViewController {
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return dataSources.count
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        
-        let values = dataSources[section]["values"] as! [String]
-        return values.count
+        return products.count
     }
     
 
@@ -55,59 +110,30 @@ class PurchaseViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let purchaseCell = tableView.dequeueReusableCell(withIdentifier: kPURCHASE_CELL) as! PurchaseCell
         
-        let section = dataSources[indexPath.section]
+        let product = products[indexPath.row]
+        
+        PurchaseViewController.priceFormatter.locale = product.priceLocale
 
-        let values = section["values"] as! [String]
-        let value = values[indexPath.row]
+        purchaseCell.title.text = products[0].localizedTitle
+        purchaseCell.subtitle.text = PurchaseViewController.priceFormatter.string(from: product.price)
         
-        let titles =  value.components(separatedBy:" ")
-        purchaseCell.title.text = titles[0] as? String
-        purchaseCell.subtitle.text = titles[1] as? String
-        
-//        guard values.count <= 3 else {
-//            DDLogError("section values should less than 3")
-//            exit(0)
-//        }
-//        
-//        let buttonWidth = purchaseCell.contentView.frame.size.width / 3 - 20
-//        let buttonHeight = purchaseCell.contentView.frame.size.height / 4 * 3
-//        
-//        for var i in 0..<values.count{
-//            let button = UIButton()
-//            button.setTitle(values[i], for: .normal)
-//            button.layer.borderWidth = 1
-//            button.layer.cornerRadius = 5
-//            button.layer.borderColor = UIColor.gray.cgColor
-//
-//
-//            button.addTarget(self, action: #selector(purchase), for: .touchUpInside)
-//            button.setTitleColor(UIColor.blue, for: .normal)
-//            
-//            purchaseCell.contentView.addSubview(button)
-//            
-//            button.snp.makeConstraints {
-//                make in
-//                make.size.equalTo(CGSize(width: buttonWidth, height: buttonHeight))
-//                make.centerY.equalTo(purchaseCell.contentView)
-//                make.centerX.equalTo(purchaseCell.contentView.center.x / 2 * CGFloat(i+1) )
-//                
-//            }
-//        }
+        let l = UILabel()
+        l.text = iap.isProductPurchased(product.productIdentifier) ? "Purchased" : "Unpurchased"
+        purchaseCell.accessoryView = l
+
         return purchaseCell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard indexPath.section < dataSources.count else {
-            return
-        }
+
+        iap.buyProduct(products[indexPath.row])
         DDLogInfo("Do purchase now")
         
     }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-         let section = dataSources[section]["title"] as! String
-        return section
-    }
+//    
+//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return products.count
+//    }
     
 //    func purchase(button: UIButton){
 //        DDLogInfo("purchase")

@@ -13,3 +13,4 @@
 "Disconnected" = "Disconnected";
 "Disconnecting..." = "Disconnecting...";
 "start VPN error:" = "Start VPN error:";
+"Invalid configuration from server" = "Invalid configuration from server";

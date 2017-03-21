@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "Connect"; ObjectID = "287-lb-buo"; */
+"287-lb-buo.text" = "Connect";
+
+/* Class = "UILabel"; text = "Smart Mode"; ObjectID = "5TS-bj-1dZ"; */
+"5TS-bj-1dZ.text" = "Smart Mode";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "8Bv-lZ-4lD"; */
+"8Bv-lZ-4lD.text" = "Subtitle";
+
+/* Class = "UINavigationController"; title = "AutoVPN"; ObjectID = "G0q-Sf-TaX"; */
+"G0q-Sf-TaX.title" = "AutoVPN";
+
+/* Class = "UIButton"; normalTitle = "Connect"; ObjectID = "GUL-AH-yRY"; */
+"GUL-AH-yRY.normalTitle" = "Connect";
+
+/* Class = "UINavigationItem"; title = "SmartVPN"; ObjectID = "R5h-jz-mgX"; */
+"R5h-jz-mgX.title" = "SmartVPN";
+
+/* Class = "UITableViewController"; title = "Proxy Mode"; ObjectID = "VXd-He-H4C"; */
+"VXd-He-H4C.title" = "Proxy Mode";
+
+/* Class = "UILabel"; text = "About"; ObjectID = "W8W-ia-pBo"; */
+"W8W-ia-pBo.text" = "About";
+
+/* Class = "UILabel"; text = "1.0.0"; ObjectID = "gz4-Wr-9Gs"; */
+"gz4-Wr-9Gs.text" = "1.0.0";
+
+/* Class = "UILabel"; text = "Version"; ObjectID = "ik1-aL-TSV"; */
+"ik1-aL-TSV.text" = "Version";
+
+/* Class = "UILabel"; text = "Proxy Mode"; ObjectID = "lLd-ec-3L8"; */
+"lLd-ec-3L8.text" = "Proxy Mode";
+
+/* Class = "UITableViewController"; title = "About"; ObjectID = "ljt-fm-nf0"; */
+"ljt-fm-nf0.title" = "About";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "tNi-rz-JSg"; */
+"tNi-rz-JSg.text" = "Title";
+
+/* Class = "UILabel"; text = "Purchase"; ObjectID = "vbf-mR-OtB"; */
+"vbf-mR-OtB.text" = "Purchase";
+
+/* Class = "UILabel"; text = "Global Mode"; ObjectID = "xef-rp-xyo"; */
+"xef-rp-xyo.text" = "Global Mode";

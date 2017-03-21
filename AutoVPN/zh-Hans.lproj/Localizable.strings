@@ -13,3 +13,4 @@
 "Disconnected" = "已断开";
 "Disconnecting..." = "断开中...";
 "start VPN error:" = "启动VPN错误：";
+"Invalid configuration from server" = "没有从服务器获得或获得了错误的配置文件";

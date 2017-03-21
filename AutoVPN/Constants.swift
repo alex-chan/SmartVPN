@@ -15,8 +15,8 @@ let kAdapterPort = "adapter_port"
 let kAdapterServer = "adapter_server"
 
 
-//let kControlServer = "http://192.168.2.200:3000"
-let kControlServer = "http://www.zcjx168.com:3000"
+//let kControlServer = "http://192.168.1.20:3000"
+let kControlServer = "http://api.ismartvpn.com:3000"
 let kControlUrl = kControlServer + "/service/nodes"
 
 let kAppGroupName = "group.gmail.czzsunset.AutoVPN"
@@ -29,3 +29,5 @@ let kAdAppId = "ca-app-pub-5471399010797318~5557754388"
 let kAesKey = "doitdonottouchit"
 
 let kFlurryKey = "ZM54Q5PSP3R37C56YW98"
+
+let kIAPmonth1 = "gmail.czzsunset.autovpn.monthly.s1"

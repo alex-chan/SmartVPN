@@ -10,14 +10,16 @@ import NetworkExtension
 import NEKit
 import CocoaLumberjackSwift
 import Resolver
+import Localize_Swift
 
-private let kProxyServer = "192.168.1.22"
-private let kProxyPort = 52041
 
 class PacketTunnelProvider: NEPacketTunnelProvider {
     
     var server: GCDHTTPProxyServer!
     var interface: TUNInterface!
+    
+    
+
     
     override init() {
         super.init()
@@ -102,19 +104,20 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
     override func startTunnel(options: [String : NSObject]? = nil, completionHandler: @escaping (Error?) -> Void) {
         
-
         let setting = UserDefaults(suiteName: kAppGroupName)!
         guard  setting.string(forKey: kAdapterType) == "ss" else {
             // currently only ss supported
+            completionHandler(SmartVPNError.invalidConfig as Error)
             return
         }
         
         let port = setting.integer(forKey: kAdapterPort)
         guard let key = setting.string(forKey: kAdapterKey) ,
               let method = setting.string(forKey: kAdapterMethod) ,
-            
             let host = setting.string(forKey: kAdapterServer)  else {
-                return
+                
+            completionHandler(SmartVPNError.invalidConfig as Error)
+            return
         }
         
         let ssAdapterFactory = ShadowsocksAdapterFactory(serverHost: host, serverPort: port, protocolObfuscaterFactory: ShadowsocksAdapter.ProtocolObfuscater.OriginProtocolObfuscater.Factory() , cryptorFactory:
@@ -126,7 +129,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 //        let httpAdapterFactory = HTTPAdapterFactory(serverHost: kProxyServer, serverPort: kProxyPort, auth: nil)
 
         let chinaRule =  CountryRule(countryCode: "CN", match: true, adapterFactory: directAdapterFactory)
-        let appleDomains = DomainListRule(adapterFactory: directAdapterFactory, criteria: [DomainListRule.MatchCriterion.suffix(".apple.com"), DomainListRule.MatchCriterion.suffix("icloud.com")])
+        let appleDomains = DomainListRule(adapterFactory: directAdapterFactory, criteria: [DomainListRule.MatchCriterion.suffix(".icloud-content.com"), DomainListRule.MatchCriterion.suffix(".apple.com"), DomainListRule.MatchCriterion.suffix(".icloud.com")])
         
 
         let allRule = AllRule(adapterFactory: ssAdapterFactory)
@@ -150,7 +153,8 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         completionHandler(nil)
 
         self.setTunnelNetworkSettings(getNetworkSetings(), completionHandler: {
-            error in
+            [unowned self]  error in
+
             guard error == nil else {
                 DDLogError("Encountered an error setting up the network: \(error!)")
                 completionHandler(error)

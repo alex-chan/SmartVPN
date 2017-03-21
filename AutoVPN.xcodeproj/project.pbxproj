@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		16CEADC013BC465BA1E09EFC /* Pods_AutoVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FEB0E1965CF6F0280B2A47 /* Pods_AutoVPN.framework */; };
 		CB0478571E6FFD9900D35AEE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0478561E6FFD9900D35AEE /* Alamofire.framework */; };
+		CB1855101E7543CA008166F0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18550F1E7543CA008166F0 /* Errors.swift */; };
+		CB1855111E7543CA008166F0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18550F1E7543CA008166F0 /* Errors.swift */; };
 		CB19F8071E7119B3008CC0F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */; };
 		CB19F81D1E712E8F008CC0F2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19F81C1E712E8F008CC0F2 /* AboutViewController.swift */; };
 		CB19F8201E7290B7008CC0F2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19F81F1E7290B7008CC0F2 /* Extensions.swift */; };
@@ -40,6 +42,8 @@
 		CB80414A1E530CE200C451F0 /* AutoVPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041491E530CE200C451F0 /* AutoVPNTests.swift */; };
 		CB8041551E530CE200C451F0 /* AutoVPNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041541E530CE200C451F0 /* AutoVPNUITests.swift */; };
 		CB9276861E73B31200C2863C /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9276851E73B31200C2863C /* NEKit.framework */; };
+		CB94206E1E804AB400306BB7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB94206D1E804AB400306BB7 /* StoreKit.framework */; };
+		CB9420711E804FE100306BB7 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9420701E804FE100306BB7 /* IAPHelper.swift */; };
 		CB9E14E61E54068300531821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E14E51E54068300531821 /* AppDelegate.swift */; };
 		CB9E14E81E54068300531821 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E14E71E54068300531821 /* ViewController.swift */; };
 		CB9E14EA1E54068300531821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9E14E91E54068300531821 /* Assets.xcassets */; };
@@ -227,6 +231,7 @@
 		BB8D2A56A6B8E6E3E61822D0 /* Pods_AutoVPNTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoVPNTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DFB8FE27B73777638381A7 /* Pods-AutoVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoVPN.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoVPN/Pods-AutoVPN.release.xcconfig"; sourceTree = "<group>"; };
 		CB0478561E6FFD9900D35AEE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		CB18550F1E7543CA008166F0 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB19F81C1E712E8F008CC0F2 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		CB19F81F1E7290B7008CC0F2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -257,6 +262,9 @@
 		CB8041541E530CE200C451F0 /* AutoVPNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoVPNUITests.swift; sourceTree = "<group>"; };
 		CB8041561E530CE200C451F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB9276851E73B31200C2863C /* NEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NEKit.framework; path = Carthage/Build/iOS/NEKit.framework; sourceTree = SOURCE_ROOT; };
+		CB94206D1E804AB400306BB7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CB9420701E804FE100306BB7 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		CB9420731E80CAA500306BB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		CB9E14E31E54068200531821 /* AutoVPN-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoVPN-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9E14E51E54068300531821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9E14E71E54068300531821 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -301,6 +309,7 @@
 				CB5602D01E617DC100FCD577 /* tun2socks.framework in Frameworks */,
 				CBD85B521E6D429E0049B210 /* Localize_Swift.framework in Frameworks */,
 				CB19F8231E7293BF008CC0F2 /* CryptoSwift.framework in Frameworks */,
+				CB94206E1E804AB400306BB7 /* StoreKit.framework in Frameworks */,
 				CB19F8241E729B9C008CC0F2 /* CryptoSwift.framework in Frameworks */,
 				CBAF94DE1E707265001A99A6 /* SwiftyJSON.framework in Frameworks */,
 				CBD5636C1E63C2B6008F8DD4 /* NetworkExtension.framework in Frameworks */,
@@ -418,6 +427,7 @@
 		CB8041311E530CE100C451F0 /* AutoVPN */ = {
 			isa = PBXGroup;
 			children = (
+				CB94206F1E804FC300306BB7 /* utils */,
 				CBC0E05E1E54656700323323 /* AutoVPN.entitlements */,
 				CB8041321E530CE100C451F0 /* AppDelegate.swift */,
 				CB8041381E530CE200C451F0 /* Main.storyboard */,
@@ -433,6 +443,7 @@
 				CBAF94DA1E7029DE001A99A6 /* Constants.swift */,
 				CB19F81C1E712E8F008CC0F2 /* AboutViewController.swift */,
 				CB19F81F1E7290B7008CC0F2 /* Extensions.swift */,
+				CB18550F1E7543CA008166F0 /* Errors.swift */,
 			);
 			path = AutoVPN;
 			sourceTree = "<group>";
@@ -455,9 +466,18 @@
 			path = AutoVPNUITests;
 			sourceTree = "<group>";
 		};
+		CB94206F1E804FC300306BB7 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				CB9420701E804FE100306BB7 /* IAPHelper.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		CB9E14CD1E54046E00531821 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB94206D1E804AB400306BB7 /* StoreKit.framework */,
 				CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */,
 				CB9E15771E540A5B00531821 /* iOS */,
 				CB9E15301E5408F200531821 /* macOS */,
@@ -718,6 +738,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
 								enabled = 1;
 							};
 							com.apple.NetworkExtensions = {
@@ -990,12 +1013,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9420711E804FE100306BB7 /* IAPHelper.swift in Sources */,
 				CB9FDDC61E5BDE7000DBCDE6 /* AutoVPNManager.swift in Sources */,
 				CB19F8201E7290B7008CC0F2 /* Extensions.swift in Sources */,
 				CB9FDDC41E5BDCDF00DBCDE6 /* MainTableViewController.swift in Sources */,
 				CB432B131E615F70009436CC /* PurchaseCell.swift in Sources */,
 				CB432B081E608478009436CC /* ProxyModeViewController.swift in Sources */,
 				CBAF94DB1E7029DE001A99A6 /* Constants.swift in Sources */,
+				CB1855101E7543CA008166F0 /* Errors.swift in Sources */,
 				CB432B0E1E61391F009436CC /* PurchaseViewController.swift in Sources */,
 				CB19F81D1E712E8F008CC0F2 /* AboutViewController.swift in Sources */,
 				CB8041331E530CE100C451F0 /* AppDelegate.swift in Sources */,
@@ -1032,6 +1057,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBC0E04D1E5461C800323323 /* PacketTunnelProvider.swift in Sources */,
+				CB1855111E7543CA008166F0 /* Errors.swift in Sources */,
 				CBAF94DC1E7029DE001A99A6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1085,6 +1111,7 @@
 			children = (
 				CB8041391E530CE200C451F0 /* Base */,
 				CBD85B491E6D329C0049B210 /* zh-Hans */,
+				CB9420731E80CAA500306BB7 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1195,7 +1222,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
@@ -1226,6 +1253,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AutoVPN/AutoVPN.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = FL2H8E474Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1238,6 +1267,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
 			};
@@ -1264,6 +1295,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.AutoVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
 			};
@@ -1406,7 +1439,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = FL2H8E474Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

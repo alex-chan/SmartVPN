@@ -52,7 +52,7 @@ class MainTableViewController: UITableViewController {
         statusLabel.text = "Remain free dataflow: unlimited".localized()
         
         Alamofire.request(kControlUrl, method: .post).responseJSON(completionHandler: {
-            response in
+             [unowned self]  response in
             print(response)
             
             switch response.result {
@@ -96,15 +96,14 @@ class MainTableViewController: UITableViewController {
     // MARK: - Actions
 
     @IBAction func startStopVPN(_ sender: Any) {
-        
-        manager.startStopVPN {
-            error in
+        manager.startStopVPN(completionHandler: {
+             [unowned self]  error in
             if let error = error {                
                 DDLogError("start VPN error:\(error)")
                 let errmsg = "start VPN error:".localized()
                 self.view.makeToast( errmsg + error.localizedDescription, duration: 2.0, position: .center)
             }
-        }
+        })
     }
     
     func setAdapter(json: JSON){
