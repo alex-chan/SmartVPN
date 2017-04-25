@@ -44,6 +44,7 @@
 		CB9276861E73B31200C2863C /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9276851E73B31200C2863C /* NEKit.framework */; };
 		CB94206E1E804AB400306BB7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB94206D1E804AB400306BB7 /* StoreKit.framework */; };
 		CB9420711E804FE100306BB7 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9420701E804FE100306BB7 /* IAPHelper.swift */; };
+		CB9420751E81056F00306BB7 /* IAPProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9420741E81056F00306BB7 /* IAPProducts.swift */; };
 		CB9E14E61E54068300531821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E14E51E54068300531821 /* AppDelegate.swift */; };
 		CB9E14E81E54068300531821 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E14E71E54068300531821 /* ViewController.swift */; };
 		CB9E14EA1E54068300531821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9E14E91E54068300531821 /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 		CBE3C9EE1E6191CD00ED44E5 /* Sodium.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BB1E617DC100FCD577 /* Sodium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBE3C9F01E6191CD00ED44E5 /* tun2socks.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BC1E617DC100FCD577 /* tun2socks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBE3C9F21E6191CD00ED44E5 /* Yaml.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BD1E617DC100FCD577 /* Yaml.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBFF59281EAE66D20028E71E /* AutoDNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF59271EAE66D20028E71E /* AutoDNSServer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +267,7 @@
 		CB94206D1E804AB400306BB7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		CB9420701E804FE100306BB7 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		CB9420731E80CAA500306BB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		CB9420741E81056F00306BB7 /* IAPProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPProducts.swift; sourceTree = "<group>"; };
 		CB9E14E31E54068200531821 /* AutoVPN-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoVPN-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9E14E51E54068300531821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9E14E71E54068300531821 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -297,6 +300,7 @@
 		CBD85B5D1E6D47080049B210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CBD85B5E1E6D471C0049B210 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
+		CBFF59271EAE66D20028E71E /* AutoDNSServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoDNSServer.swift; sourceTree = "<group>"; };
 		E3C8BC9CBBE115133F0193B3 /* Pods_PacketTunnel_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PacketTunnel_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72C53AF90956843D2DAA0AD /* Pods_PacketTunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PacketTunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -444,6 +448,7 @@
 				CB19F81C1E712E8F008CC0F2 /* AboutViewController.swift */,
 				CB19F81F1E7290B7008CC0F2 /* Extensions.swift */,
 				CB18550F1E7543CA008166F0 /* Errors.swift */,
+				CB9420741E81056F00306BB7 /* IAPProducts.swift */,
 			);
 			path = AutoVPN;
 			sourceTree = "<group>";
@@ -554,6 +559,7 @@
 				CBC0E04C1E5461C800323323 /* PacketTunnelProvider.swift */,
 				CBC0E04E1E5461C800323323 /* Info.plist */,
 				CBC0E04A1E5461C800323323 /* Supporting Files */,
+				CBFF59271EAE66D20028E71E /* AutoDNSServer.swift */,
 			);
 			path = PacketTunnel;
 			sourceTree = "<group>";
@@ -1023,6 +1029,7 @@
 				CB1855101E7543CA008166F0 /* Errors.swift in Sources */,
 				CB432B0E1E61391F009436CC /* PurchaseViewController.swift in Sources */,
 				CB19F81D1E712E8F008CC0F2 /* AboutViewController.swift in Sources */,
+				CB9420751E81056F00306BB7 /* IAPProducts.swift in Sources */,
 				CB8041331E530CE100C451F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1058,6 +1065,7 @@
 			files = (
 				CBC0E04D1E5461C800323323 /* PacketTunnelProvider.swift in Sources */,
 				CB1855111E7543CA008166F0 /* Errors.swift in Sources */,
+				CBFF59281EAE66D20028E71E /* AutoDNSServer.swift in Sources */,
 				CBAF94DC1E7029DE001A99A6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

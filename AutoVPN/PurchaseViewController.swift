@@ -16,20 +16,6 @@ private let kPURCHASE_CELL = "kPURCHASE_CELL"
 
 class PurchaseViewController: UITableViewController {
 
-//    let dataSources = [
-//        [
-//            "title": "One-time purchase",
-//            "values" : ["10G(Month) $3.99/Once", "60G(Half-Year) $18.99/Once"]
-//        ],
-//        [
-//             "title":"Mini Subscription",
-//             "values": ["3G $0.99/Month", "20G $5.49/Half-Year"]
-//        ],[
-//            "title":"Classic Subscription",
-//            "values": ["10G $2.99/Month", "60G $16.99/Half-Year"]
-//        ]
-//        
-//    ]
     static let priceFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
         
@@ -38,8 +24,6 @@ class PurchaseViewController: UITableViewController {
         
         return formatter
     }()
-    
-    var iap = IAPHelper(productIds: [kIAPmonth1])
     
     var products = [SKProduct]()
 
@@ -64,7 +48,7 @@ class PurchaseViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         
-        iap.requestProducts {
+        IAPProducts.store.requestProducts {
             success, products in
             if success {
                 self.products = products!
@@ -74,7 +58,7 @@ class PurchaseViewController: UITableViewController {
     }
     
     func restoreTapped(_ sender: AnyObject) {
-        iap.restorePurchases()
+        IAPProducts.store.restorePurchases()
     }
     
     func handlePurchaseNotification(_ notification: Notification) {
@@ -117,16 +101,18 @@ extension PurchaseViewController {
         purchaseCell.title.text = products[0].localizedTitle
         purchaseCell.subtitle.text = PurchaseViewController.priceFormatter.string(from: product.price)
         
-        let l = UILabel()
-        l.text = iap.isProductPurchased(product.productIdentifier) ? "Purchased" : "Unpurchased"
-        purchaseCell.accessoryView = l
+//        let l = UILabel()
+//        l.text = IAPProducts.store.isProductPurchased(product.productIdentifier) ? "Purchased" : "Unpurchased"
+//        l.sizeToFit()
+//        purchaseCell.accessoryView = l
+        purchaseCell.accessoryType = IAPProducts.store.isProductPurchased(product.productIdentifier) ? .checkmark : .none
 
         return purchaseCell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        iap.buyProduct(products[indexPath.row])
+        IAPProducts.store.buyProduct(products[indexPath.row])
         DDLogInfo("Do purchase now")
         
     }

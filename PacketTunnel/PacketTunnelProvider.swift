@@ -132,7 +132,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         let appleDomains = DomainListRule(adapterFactory: directAdapterFactory, criteria: [DomainListRule.MatchCriterion.suffix(".icloud-content.com"), DomainListRule.MatchCriterion.suffix(".apple.com"), DomainListRule.MatchCriterion.suffix(".icloud.com")])
         
 
-        let allRule = AllRule(adapterFactory: ssAdapterFactory)
+        let allRule = AllRule(adapterFactory: directAdapterFactory)
         
         
         let manager = RuleManager(fromRules: [appleDomains, chinaRule, allRule], appendDirect: true)
@@ -167,7 +167,10 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             
             let dnsServer = DNSServer(address: IPAddress(fromString: "172.169.0.1")!, port: Port(port: 53), fakeIPPool: fakeIPPool)
             let resolver = UDPDNSResolver(address: IPAddress(fromString: "114.114.114.114")!, port: Port(port: 53))
+            let resolver2 = AutoVPNDNSServer()
+            dnsServer.registerResolver(resolver2)
             dnsServer.registerResolver(resolver)
+            
             DNSServer.currentServer = dnsServer
             
             let tcpStack = TCPStack.stack
