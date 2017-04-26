@@ -1,5 +1,6 @@
 github "alex-chan/YamlSwift" "master"
 github "alex-chan/tun2socks" "master"
+github "alex-chan/SwiftyBeaver" "master"
 github "alex-chan/NEKit" "master"
 github "SnapKit/SnapKit" ~> 3.2.0
 github "marmelroy/Localize-Swift"

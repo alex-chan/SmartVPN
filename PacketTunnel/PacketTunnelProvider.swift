@@ -8,10 +8,11 @@
 
 import NetworkExtension
 import NEKit
-import CocoaLumberjackSwift
 import Resolver
 import Localize_Swift
+import SwiftyBeaver
 
+let log = SwiftyBeaver.self
 
 class PacketTunnelProvider: NEPacketTunnelProvider {
     
@@ -24,8 +25,14 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
     override init() {
         super.init()
         
-        DDLog.add(DDASLLogger.sharedInstance) // ASL = Apple System Logs
-        DDLog.add(DDTTYLogger.sharedInstance) // TTY = Xcode console
+        let console = ConsoleDestination()  // log to Xcode Console
+        let file = FileDestination()  // log to default swiftybeaver.log file
+        let cloud = SBPlatformDestination(appID: "dGP8WW", appSecret: "c0Yboblgojpz7lvrmZvpnvzMhvsbovkv", encryptionKey: "e2J6bldyrne2ieOxtvhpbouebFu4sPr4") // to cloud
+        
+        log.addDestination(console)
+        log.addDestination(file)
+        log.addDestination(cloud)
+        
     }
     
     deinit {
@@ -45,14 +52,14 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
         override open func signal(_ event: ProxyServerEvent) {
 //            let mainVC = (UIApplication.shared.keyWindow!.rootViewController as! UINavigationController).topViewController as! MainTableViewController
-            DDLogInfo("DebugProxyServerObserver2\(event)")
+            log.info("DebugProxyServerObserver2\(event)")
             switch event {
             case .started:
 //                mainVC.status = .CONNECTED
-                DDLogInfo("\(event)")
+                log.info("\(event)")
             case .stopped, .tunnelClosed:
 //                mainVC.status = .DISCONNECTED
-                DDLogInfo("\(event)")
+                log.info("\(event)")
             default: break
                 
             }
@@ -166,10 +173,10 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             let fakeIPPool = try! IPPool(range: IPRange(startIP: IPAddress(fromString: "172.169.1.0")!, endIP: IPAddress(fromString: "172.169.255.0")!))
             
             let dnsServer = DNSServer(address: IPAddress(fromString: "172.169.0.1")!, port: Port(port: 53), fakeIPPool: fakeIPPool)
-            let resolver = UDPDNSResolver(address: IPAddress(fromString: "114.114.114.114")!, port: Port(port: 53))
-            let resolver2 = AutoVPNDNSServer()
+//            let resolver = UDPDNSResolver(address: IPAddress(fromString: "114.114.114.114")!, port: Port(port: 53))
+            let resolver2 = AutoVPNDNSResolver()
             dnsServer.registerResolver(resolver2)
-            dnsServer.registerResolver(resolver)
+//            dnsServer.registerResolver(resolver)
             
             DNSServer.currentServer = dnsServer
             

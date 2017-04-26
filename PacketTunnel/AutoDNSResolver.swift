@@ -7,21 +7,23 @@
 //
 
 import Foundation
+import NEKit
+import SwiftyBeaver
 
-
-class AutoVPNDNSServer: DNSResolverProtocol {
+class AutoVPNDNSResolver: DNSResolverProtocol {
     
     public weak var delegate: DNSResolverDelegate?
     
-    public init() {
-        
-    }
     
     public func resolve(session: DNSSession) {
         let googleIP = "61.91.161.217"
         
-        if session.requestMessage.queries.first!.name.hasSuffix(".google.com") {
-            delegate?.didReceive(rawResponse: googleIP.data(using: .utf8))
+        
+        for query in session.requestMessage.queries {
+            log.debug("DNS Query:\(query.name)")
+            if query.name.contains("google") {
+                delegate?.didReceive(rawResponse: googleIP.data(using: .utf8)!)
+            }
         }
     }
     
