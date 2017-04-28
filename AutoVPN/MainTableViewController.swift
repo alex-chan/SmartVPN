@@ -26,8 +26,7 @@ class MainTableViewController: UITableViewController {
     
     @IBOutlet weak var bannerAd: GADBannerView!
     
-    let manager = AutoVPNManager()
-    
+    let manager = AutoVPNManager()    
 
     override func viewDidLoad() {
         super.viewDidLoad()
