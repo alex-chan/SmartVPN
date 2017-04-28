@@ -22,11 +22,10 @@ class MainTableViewController: UITableViewController {
     
     @IBOutlet weak var mainButton: UIButton!
     @IBOutlet weak var actionCell: UITableViewCell!
-    @IBOutlet weak var statusLabel: UILabel!
-    
+    @IBOutlet weak var statusLabel: UILabel!    
     @IBOutlet weak var bannerAd: GADBannerView!
     
-    let manager = AutoVPNManager()    
+    let manager = AutoVPNManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
