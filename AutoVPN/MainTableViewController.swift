@@ -115,7 +115,6 @@ class MainTableViewController: UITableViewController {
         userDefault.set(json["port"].intValue, forKey: kAdapterPort)
         userDefault.set(server, forKey: kAdapterServer)
         userDefault.synchronize()
-
     }    
  }
 
