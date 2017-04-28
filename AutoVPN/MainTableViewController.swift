@@ -30,8 +30,7 @@ class MainTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bannerAd.isHidden  = true
-        
+        bannerAd.isHidden  = true        
         bannerAd.adUnitID = kAdUnitId
         bannerAd.rootViewController = self
         bannerAd.load(GADRequest())
