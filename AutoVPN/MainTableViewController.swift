@@ -116,8 +116,7 @@ class MainTableViewController: UITableViewController {
         userDefault.set(server, forKey: kAdapterServer)
         userDefault.synchronize()
 
-    }
-    
+    }    
  }
 
 
