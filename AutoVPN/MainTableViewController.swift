@@ -84,10 +84,7 @@ class MainTableViewController: UITableViewController {
             return  actionCell.frame.width
         }
         return super.tableView(tableView, heightForRowAt: indexPath)
-    }
-    
-    
-
+    }    
     
     // MARK: - Actions
 
