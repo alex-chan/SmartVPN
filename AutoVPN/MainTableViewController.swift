@@ -29,7 +29,6 @@ class MainTableViewController: UITableViewController {
     let manager = AutoVPNManager()
     
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
