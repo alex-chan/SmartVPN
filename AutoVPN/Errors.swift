@@ -9,7 +9,6 @@
 import Foundation
 import Localize_Swift
 
-
 enum SmartVPNError: Error {
     case invalidConfig
     var localizedDescription: String {

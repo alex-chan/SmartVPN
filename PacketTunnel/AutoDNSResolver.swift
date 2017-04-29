@@ -11,14 +11,12 @@ import NEKit
 import SwiftyBeaver
 
 class AutoVPNDNSResolver: DNSResolverProtocol {
-    
+
     public weak var delegate: DNSResolverDelegate?
-    
-    
+
     public func resolve(session: DNSSession) {
         let googleIP = "61.91.161.217"
-        
-        
+
         for query in session.requestMessage.queries {
             log.debug("DNS Query:\(query.name)")
             if query.name.contains("google") {
@@ -26,8 +24,8 @@ class AutoVPNDNSResolver: DNSResolverProtocol {
             }
         }
     }
-    
+
     public func stop() {
-        
+
     }
 }

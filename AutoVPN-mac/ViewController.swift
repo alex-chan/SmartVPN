@@ -20,19 +20,16 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
- 
-        
+
         NETunnelProviderManager.loadAllFromPreferences(completionHandler: {
             (managers, error) in
-            
+
             if let managers = managers {
-                
-                
+
                 let manager: NETunnelProviderManager
                 if managers.count > 0 {
                     manager = managers[0]
-                }else{
+                } else {
                     manager = self.createProviderManager()
                 }
                 manager.isEnabled = true
@@ -45,24 +42,23 @@ class ViewController: NSViewController {
                 manager.saveToPreferences(completionHandler: { (error) -> Void in
                     if let error = error {
                         DDLogInfo("\(error)")
-                    }else{
+                    } else {
                         manager.loadFromPreferences(completionHandler: { (error) -> Void in
                             if let error = error {
                                  DDLogInfo("\(error)")
-                            }else{
+                            } else {
                                 DDLogInfo("OK")
                                 self.vpnManger = manager
                             }
                         })
                     }
                 })
-                
+
             }
         })
-        
-        
+
     }
-    
+
     fileprivate func createProviderManager() -> NETunnelProviderManager {
         let manager = NETunnelProviderManager()
         manager.protocolConfiguration = NETunnelProviderProtocol()
@@ -80,4 +76,3 @@ class ViewController: NSViewController {
     }
 
 }
-

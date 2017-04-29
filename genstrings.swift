@@ -9,7 +9,7 @@ class GenStrings {
     let acceptedFileExtensions = ["swift"]
     let excludedFolderNames = ["Carthage"]
     let excludedFileNames = ["genstrings.swift"]
-    var regularExpresions = [String:NSRegularExpression]()
+    var regularExpresions = [String: NSRegularExpression]()
 
     let localizedRegex = "(?<=\")([^\"]*)(?=\".(localized|localizedFormat))|(?<=(Localized|NSLocalizedString)\\(\")([^\"]*?)(?=\")"
 
@@ -50,22 +50,20 @@ class GenStrings {
         return Set<String>()
     }
 
-    //MARK: Regex
+    // MARK: Regex
 
     func regexWithPattern(pattern: String) throws -> NSRegularExpression {
         var safeRegex = regularExpresions
         if let regex = safeRegex[pattern] {
             return regex
-        }
-        else {
+        } else {
             do {
                 let currentPattern: NSRegularExpression
                 currentPattern =  try NSRegularExpression(pattern: pattern, options:NSRegularExpression.Options.caseInsensitive)
                 safeRegex.updateValue(currentPattern, forKey: pattern)
                 regularExpresions = safeRegex
                 return currentPattern
-            }
-            catch {
+            } catch {
                 throw GenstringsError.Error
             }
         }
@@ -80,13 +78,12 @@ class GenStrings {
             let stringRange = NSMakeRange(0, nsString.length)
             let matches = currentPattern.matches(in: internalString, options: [], range: stringRange)
             return matches
-        }
-        catch {
+        } catch {
             throw GenstringsError.Error
         }
     }
 
-    //MARK: File manager
+    // MARK: File manager
 
     func fetchFilesInFolder(rootPath: URL) -> [URL] {
         var files = [URL]()
@@ -96,7 +93,7 @@ class GenStrings {
                 let stringPath = urlPath.path
                 let lastPathComponent = urlPath.lastPathComponent
                 let pathExtension = urlPath.pathExtension
-                var isDir : ObjCBool = false
+                var isDir: ObjCBool = false
                 if fileManager.fileExists(atPath: stringPath, isDirectory:&isDir) {
                     if isDir.boolValue {
                         if !excludedFolderNames.contains(lastPathComponent) {
@@ -104,7 +101,7 @@ class GenStrings {
                             files.append(contentsOf: dirFiles)
                         }
                     } else {
-                        if acceptedFileExtensions.contains(pathExtension) && !excludedFileNames.contains(lastPathComponent)  {
+                        if acceptedFileExtensions.contains(pathExtension) && !excludedFileNames.contains(lastPathComponent) {
                             files.append(urlPath)
                         }
                     }

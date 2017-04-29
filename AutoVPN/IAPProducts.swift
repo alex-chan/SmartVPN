@@ -9,11 +9,11 @@
 import Foundation
 
 public struct IAPProducts {
-    
+
     public static let ikIAPmonth1 = kIAPmonth1
-    
+
     fileprivate static let productIdentifiers: Set<ProductIdentifier> = [IAPProducts.ikIAPmonth1]
-    
+
     public static let store = IAPHelper(productIds: IAPProducts.productIdentifiers)
 }
 

@@ -10,8 +10,6 @@ import UIKit
 
 class AboutViewController: UITableViewController {
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,11 +19,10 @@ class AboutViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
 //         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareAction) )
     }
-    
-    func shareAction(action: UIButton){
+
+    func shareAction(action: UIButton) {
         let shareText = "Hello, world!"
-        
-        
+
             let vc = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
             present(vc, animated: true, completion: nil)
 
@@ -102,10 +99,9 @@ class AboutViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
+
     @IBAction func shareIt(_ sender: Any) {
-        
+
     }
-    
 
 }

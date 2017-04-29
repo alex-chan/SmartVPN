@@ -3,5 +3,3 @@
 import UIKit
 
 let items = [".a", ".b", ".c"]
-
-

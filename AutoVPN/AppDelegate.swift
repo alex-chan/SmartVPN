@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 //        let splitViewController = self.window!.rootViewController as! UISplitViewController
@@ -26,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         FIRApp.configure()
         // Initialize Google Mobile Ads SDK
         GADMobileAds.configure(withApplicationID: kAdAppId)
-        
+
         Flurry.startSession(kFlurryKey)
 
         return true
@@ -67,4 +66,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 //    }
 
 }
-
