@@ -10,7 +10,6 @@ import UIKit
 
 import NetworkExtension
 
-import NEKit
 import CocoaLumberjackSwift
 import Localize_Swift
 import Alamofire

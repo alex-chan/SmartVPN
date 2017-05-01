@@ -11,9 +11,17 @@
 		CB0478571E6FFD9900D35AEE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0478561E6FFD9900D35AEE /* Alamofire.framework */; };
 		CB0505A01EB109980000E619 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB05059A1EB1086C0000E619 /* NetworkExtension.framework */; };
 		CB0505A11EB10A800000E619 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB05059A1EB1086C0000E619 /* NetworkExtension.framework */; };
+		CB0505B31EB719D30000E619 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */; };
+		CB0505C51EB725830000E619 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0E04C1E5461C800323323 /* PacketTunnelProvider.swift */; };
+		CB0505C71EB725870000E619 /* AutoDNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF59271EAE66D20028E71E /* AutoDNSResolver.swift */; };
+		CB0505C91EB7258B0000E619 /* TunnelPacketDebugObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0505A71EB7159A0000E619 /* TunnelPacketDebugObserver.swift */; };
+		CB0505CF1EB79E570000E619 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0E04C1E5461C800323323 /* PacketTunnelProvider.swift */; };
+		CB0505D01EB79E5A0000E619 /* AutoDNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF59271EAE66D20028E71E /* AutoDNSResolver.swift */; };
+		CB0505D11EB79E5C0000E619 /* TunnelPacketDebugObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0505A71EB7159A0000E619 /* TunnelPacketDebugObserver.swift */; };
+		CB0505D61EB7A2680000E619 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0505D51EB7A2680000E619 /* SwiftyBeaver.framework */; };
+		CB0505D71EB7A2680000E619 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0505D51EB7A2680000E619 /* SwiftyBeaver.framework */; };
 		CB1855101E7543CA008166F0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18550F1E7543CA008166F0 /* Errors.swift */; };
 		CB1855111E7543CA008166F0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18550F1E7543CA008166F0 /* Errors.swift */; };
-		CB19F8071E7119B3008CC0F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */; };
 		CB19F81D1E712E8F008CC0F2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19F81C1E712E8F008CC0F2 /* AboutViewController.swift */; };
 		CB19F8201E7290B7008CC0F2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19F81F1E7290B7008CC0F2 /* Extensions.swift */; };
 		CB19F8231E7293BF008CC0F2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB19F8221E7293BF008CC0F2 /* CryptoSwift.framework */; };
@@ -26,18 +34,12 @@
 		CB5234181EB0EDA200739CFB /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234151EB0ED8800739CFB /* SwiftyBeaver.framework */; };
 		CB5234191EB0EDA200739CFB /* SwiftyBeaver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234151EB0ED8800739CFB /* SwiftyBeaver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB5234341EB1021E00739CFB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234241EB1021E00739CFB /* Alamofire.framework */; };
-		CB5234351EB1021E00739CFB /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234251EB1021E00739CFB /* CocoaAsyncSocket.framework */; };
-		CB5234361EB1021E00739CFB /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234261EB1021E00739CFB /* CocoaLumberjack.framework */; };
-		CB5234371EB1021E00739CFB /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234271EB1021E00739CFB /* CocoaLumberjackSwift.framework */; };
 		CB5234381EB1021E00739CFB /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234281EB1021E00739CFB /* CryptoSwift.framework */; };
 		CB5234391EB1021E00739CFB /* Localize_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234291EB1021E00739CFB /* Localize_Swift.framework */; };
 		CB52343A1EB1021E00739CFB /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342A1EB1021E00739CFB /* lwip.framework */; };
 		CB52343B1EB1021E00739CFB /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342B1EB1021E00739CFB /* MMDB.framework */; };
-		CB52343C1EB1021E00739CFB /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342C1EB1021E00739CFB /* NEKit.framework */; };
 		CB52343D1EB1021E00739CFB /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342D1EB1021E00739CFB /* Resolver.framework */; };
-		CB52343E1EB1021E00739CFB /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342E1EB1021E00739CFB /* SnapKit.framework */; };
 		CB52343F1EB1021E00739CFB /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342F1EB1021E00739CFB /* Sodium.framework */; };
-		CB5234401EB1021E00739CFB /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234301EB1021E00739CFB /* SwiftyBeaver.framework */; };
 		CB5234411EB1021E00739CFB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234311EB1021E00739CFB /* SwiftyJSON.framework */; };
 		CB5234421EB1021E00739CFB /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234321EB1021E00739CFB /* tun2socks.framework */; };
 		CB5234431EB1021E00739CFB /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234331EB1021E00739CFB /* Yaml.framework */; };
@@ -65,8 +67,6 @@
 		CB5234591EB1037600739CFB /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342E1EB1021E00739CFB /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB52345A1EB1037600739CFB /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342F1EB1021E00739CFB /* Sodium.framework */; };
 		CB52345B1EB1037600739CFB /* Sodium.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342F1EB1021E00739CFB /* Sodium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CB52345C1EB1037600739CFB /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234301EB1021E00739CFB /* SwiftyBeaver.framework */; };
-		CB52345D1EB1037600739CFB /* SwiftyBeaver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234301EB1021E00739CFB /* SwiftyBeaver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB52345E1EB1037600739CFB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234311EB1021E00739CFB /* SwiftyJSON.framework */; };
 		CB52345F1EB1037600739CFB /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234311EB1021E00739CFB /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB5234601EB1037600739CFB /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5234321EB1021E00739CFB /* tun2socks.framework */; };
@@ -81,7 +81,6 @@
 		CB5602C51E617DC100FCD577 /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B61E617DC100FCD577 /* lwip.framework */; };
 		CB5602C71E617DC100FCD577 /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B71E617DC100FCD577 /* MMDB.framework */; };
 		CB5602CB1E617DC100FCD577 /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B91E617DC100FCD577 /* Resolver.framework */; };
-		CB5602CD1E617DC100FCD577 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BA1E617DC100FCD577 /* SnapKit.framework */; };
 		CB5602CE1E617DC100FCD577 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BB1E617DC100FCD577 /* Sodium.framework */; };
 		CB5602CF1E617DC100FCD577 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BB1E617DC100FCD577 /* Sodium.framework */; };
 		CB5602D01E617DC100FCD577 /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BC1E617DC100FCD577 /* tun2socks.framework */; };
@@ -112,7 +111,6 @@
 		CBAF94DF1E707266001A99A6 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBAF94D81E70223A001A99A6 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBAF94E11E70728E001A99A6 /* ToastSwiftFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBAF94D61E701257001A99A6 /* ToastSwiftFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBAF94E21E7074B5001A99A6 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */; };
-		CBC0E04D1E5461C800323323 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0E04C1E5461C800323323 /* PacketTunnelProvider.swift */; };
 		CBC0E0511E5461C800323323 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBC0E0481E5461C800323323 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBC0E0841E54BDAA00323323 /* PacketTunnel-mac.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBC0E07B1E54BDAA00323323 /* PacketTunnel-mac.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBD5636C1E63C2B6008F8DD4 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */; };
@@ -133,7 +131,6 @@
 		CBE3C9EE1E6191CD00ED44E5 /* Sodium.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BB1E617DC100FCD577 /* Sodium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBE3C9F01E6191CD00ED44E5 /* tun2socks.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BC1E617DC100FCD577 /* tun2socks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBE3C9F21E6191CD00ED44E5 /* Yaml.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BD1E617DC100FCD577 /* Yaml.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CBFF59281EAE66D20028E71E /* AutoDNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF59271EAE66D20028E71E /* AutoDNSResolver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,13 +183,6 @@
 			remoteGlobalIDString = 362347221D7D458E00A047DE;
 			remoteInfo = "NEKitTests-iOS";
 		};
-		CBC0E03F1E54457100323323 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 36463A2F1CDCD5EB0040579C;
-			remoteInfo = "NEKit-macOS";
-		};
 		CBC0E04F1E5461C800323323 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB8041271E530CE100C451F0 /* Project object */;
@@ -206,13 +196,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = CBC0E07A1E54BDAA00323323;
 			remoteInfo = "PacketTunnel-mac";
-		};
-		CBC0E0891E54BDD400323323 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 36463A2F1CDCD5EB0040579C;
-			remoteInfo = "NEKit-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -255,7 +238,6 @@
 				CB52344F1EB1037600739CFB /* Localize_Swift.framework in Embed Frameworks */,
 				CB52345F1EB1037600739CFB /* SwiftyJSON.framework in Embed Frameworks */,
 				CB5234531EB1037600739CFB /* MMDB.framework in Embed Frameworks */,
-				CB52345D1EB1037600739CFB /* SwiftyBeaver.framework in Embed Frameworks */,
 				CB5234611EB1037600739CFB /* tun2socks.framework in Embed Frameworks */,
 				CB5234511EB1037600739CFB /* lwip.framework in Embed Frameworks */,
 				CB5234471EB1037600739CFB /* CocoaAsyncSocket.framework in Embed Frameworks */,
@@ -302,6 +284,8 @@
 		C8DFB8FE27B73777638381A7 /* Pods-AutoVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoVPN.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoVPN/Pods-AutoVPN.release.xcconfig"; sourceTree = "<group>"; };
 		CB0478561E6FFD9900D35AEE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		CB05059A1EB1086C0000E619 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/NetworkExtension.framework; sourceTree = DEVELOPER_DIR; };
+		CB0505A71EB7159A0000E619 /* TunnelPacketDebugObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelPacketDebugObserver.swift; sourceTree = "<group>"; };
+		CB0505D51EB7A2680000E619 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = SOURCE_ROOT; };
 		CB18550F1E7543CA008166F0 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB19F81C1E712E8F008CC0F2 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -323,7 +307,6 @@
 		CB52342D1EB1021E00739CFB /* Resolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resolver.framework; path = Carthage/Build/Mac/Resolver.framework; sourceTree = SOURCE_ROOT; };
 		CB52342E1EB1021E00739CFB /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/Mac/SnapKit.framework; sourceTree = SOURCE_ROOT; };
 		CB52342F1EB1021E00739CFB /* Sodium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sodium.framework; path = Carthage/Build/Mac/Sodium.framework; sourceTree = SOURCE_ROOT; };
-		CB5234301EB1021E00739CFB /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/Mac/SwiftyBeaver.framework; sourceTree = SOURCE_ROOT; };
 		CB5234311EB1021E00739CFB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
 		CB5234321EB1021E00739CFB /* tun2socks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tun2socks.framework; path = Carthage/Build/Mac/tun2socks.framework; sourceTree = SOURCE_ROOT; };
 		CB5234331EB1021E00739CFB /* Yaml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yaml.framework; path = Carthage/Build/Mac/Yaml.framework; sourceTree = SOURCE_ROOT; };
@@ -442,11 +425,11 @@
 				CB52344E1EB1037600739CFB /* Localize_Swift.framework in Frameworks */,
 				CB52345E1EB1037600739CFB /* SwiftyJSON.framework in Frameworks */,
 				CB5234521EB1037600739CFB /* MMDB.framework in Frameworks */,
-				CB52345C1EB1037600739CFB /* SwiftyBeaver.framework in Frameworks */,
 				CB5234601EB1037600739CFB /* tun2socks.framework in Frameworks */,
 				CB5234501EB1037600739CFB /* lwip.framework in Frameworks */,
 				CB5234461EB1037600739CFB /* CocoaAsyncSocket.framework in Frameworks */,
 				CB5234481EB1037600739CFB /* CocoaLumberjack.framework in Frameworks */,
+				CB0505D61EB7A2680000E619 /* SwiftyBeaver.framework in Frameworks */,
 				CB52344C1EB1037600739CFB /* CryptoSwift.framework in Frameworks */,
 				CB5234561EB1037600739CFB /* Resolver.framework in Frameworks */,
 				CB5234621EB1037600739CFB /* Yaml.framework in Frameworks */,
@@ -470,7 +453,6 @@
 				CB5602D31E617DC100FCD577 /* Yaml.framework in Frameworks */,
 				CB5602D11E617DC100FCD577 /* tun2socks.framework in Frameworks */,
 				CB5602C31E617DC100FCD577 /* CocoaLumberjackSwift.framework in Frameworks */,
-				CB5602CD1E617DC100FCD577 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,19 +461,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5234341EB1021E00739CFB /* Alamofire.framework in Frameworks */,
-				CB5234351EB1021E00739CFB /* CocoaAsyncSocket.framework in Frameworks */,
-				CB5234361EB1021E00739CFB /* CocoaLumberjack.framework in Frameworks */,
+				CB0505D71EB7A2680000E619 /* SwiftyBeaver.framework in Frameworks */,
 				CB0505A11EB10A800000E619 /* NetworkExtension.framework in Frameworks */,
-				CB5234371EB1021E00739CFB /* CocoaLumberjackSwift.framework in Frameworks */,
 				CB5234381EB1021E00739CFB /* CryptoSwift.framework in Frameworks */,
 				CB5234391EB1021E00739CFB /* Localize_Swift.framework in Frameworks */,
 				CB52343A1EB1021E00739CFB /* lwip.framework in Frameworks */,
 				CB52343B1EB1021E00739CFB /* MMDB.framework in Frameworks */,
-				CB52343C1EB1021E00739CFB /* NEKit.framework in Frameworks */,
 				CB52343D1EB1021E00739CFB /* Resolver.framework in Frameworks */,
-				CB52343E1EB1021E00739CFB /* SnapKit.framework in Frameworks */,
 				CB52343F1EB1021E00739CFB /* Sodium.framework in Frameworks */,
-				CB5234401EB1021E00739CFB /* SwiftyBeaver.framework in Frameworks */,
 				CB5234411EB1021E00739CFB /* SwiftyJSON.framework in Frameworks */,
 				CB5234421EB1021E00739CFB /* tun2socks.framework in Frameworks */,
 				CB5234431EB1021E00739CFB /* Yaml.framework in Frameworks */,
@@ -659,6 +636,7 @@
 		CB9E15301E5408F200531821 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				CB0505D51EB7A2680000E619 /* SwiftyBeaver.framework */,
 				CB05059A1EB1086C0000E619 /* NetworkExtension.framework */,
 				CB5234241EB1021E00739CFB /* Alamofire.framework */,
 				CB5234251EB1021E00739CFB /* CocoaAsyncSocket.framework */,
@@ -672,7 +650,6 @@
 				CB52342D1EB1021E00739CFB /* Resolver.framework */,
 				CB52342E1EB1021E00739CFB /* SnapKit.framework */,
 				CB52342F1EB1021E00739CFB /* Sodium.framework */,
-				CB5234301EB1021E00739CFB /* SwiftyBeaver.framework */,
 				CB5234311EB1021E00739CFB /* SwiftyJSON.framework */,
 				CB5234321EB1021E00739CFB /* tun2socks.framework */,
 				CB5234331EB1021E00739CFB /* Yaml.framework */,
@@ -714,6 +691,7 @@
 				CB5234201EB0FD9300739CFB /* iOS */,
 				CBC0E04C1E5461C800323323 /* PacketTunnelProvider.swift */,
 				CBFF59271EAE66D20028E71E /* AutoDNSResolver.swift */,
+				CB0505A71EB7159A0000E619 /* TunnelPacketDebugObserver.swift */,
 			);
 			path = PacketTunnel;
 			sourceTree = "<group>";
@@ -725,8 +703,7 @@
 				CB0478421E6FF95F00D35AEE /* playground */,
 				CBD85B421E6CFB370049B210 /* Proxy */,
 			);
-			name = Resources;
-			path = Res;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		CBD85B421E6CFB370049B210 /* Proxy */ = {
@@ -813,7 +790,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				CBC0E0401E54457100323323 /* PBXTargetDependency */,
 				CBC0E0831E54BDAA00323323 /* PBXTargetDependency */,
 			);
 			name = "AutoVPN-mac";
@@ -849,7 +825,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				CBC0E08A1E54BDD400323323 /* PBXTargetDependency */,
 			);
 			name = "PacketTunnel-mac";
 			productName = "PacketTunnel-mac";
@@ -1011,9 +986,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0505B31EB719D30000E619 /* GoogleService-Info.plist in Resources */,
 				CB80413F1E530CE200C451F0 /* LaunchScreen.storyboard in Resources */,
 				CBD85B5A1E6D46D40049B210 /* Localizable.strings in Resources */,
-				CB19F8071E7119B3008CC0F2 /* GoogleService-Info.plist in Resources */,
 				CB80413C1E530CE200C451F0 /* Assets.xcassets in Resources */,
 				CB80413A1E530CE200C451F0 /* Main.storyboard in Resources */,
 			);
@@ -1199,10 +1174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBC0E04D1E5461C800323323 /* PacketTunnelProvider.swift in Sources */,
+				CB0505D01EB79E5A0000E619 /* AutoDNSResolver.swift in Sources */,
+				CB0505D11EB79E5C0000E619 /* TunnelPacketDebugObserver.swift in Sources */,
 				CB1855111E7543CA008166F0 /* Errors.swift in Sources */,
-				CBFF59281EAE66D20028E71E /* AutoDNSResolver.swift in Sources */,
 				CBAF94DC1E7029DE001A99A6 /* Constants.swift in Sources */,
+				CB0505CF1EB79E570000E619 /* PacketTunnelProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1210,6 +1186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0505C91EB7258B0000E619 /* TunnelPacketDebugObserver.swift in Sources */,
+				CB0505C71EB725870000E619 /* AutoDNSResolver.swift in Sources */,
+				CB0505C51EB725830000E619 /* PacketTunnelProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1226,11 +1205,6 @@
 			target = CB80412E1E530CE100C451F0 /* AutoVPN */;
 			targetProxy = CB8041511E530CE200C451F0 /* PBXContainerItemProxy */;
 		};
-		CBC0E0401E54457100323323 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "NEKit-macOS";
-			targetProxy = CBC0E03F1E54457100323323 /* PBXContainerItemProxy */;
-		};
 		CBC0E0501E5461C800323323 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CBC0E0471E5461C800323323 /* PacketTunnel */;
@@ -1240,11 +1214,6 @@
 			isa = PBXTargetDependency;
 			target = CBC0E07A1E54BDAA00323323 /* PacketTunnel-mac */;
 			targetProxy = CBC0E0821E54BDAA00323323 /* PBXContainerItemProxy */;
-		};
-		CBC0E08A1E54BDD400323323 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "NEKit-macOS";
-			targetProxy = CBC0E0891E54BDD400323323 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1508,6 +1477,7 @@
 		CB9E14EF1E54068300531821 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "AutoVPN-mac/AutoVPN-mac.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -1517,6 +1487,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 					"$(PROJECT_DIR)/Framework/macOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "AutoVPN-mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -1533,6 +1504,7 @@
 		CB9E14F01E54068300531821 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "AutoVPN-mac/AutoVPN-mac.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -1542,6 +1514,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 					"$(PROJECT_DIR)/Framework/macOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "AutoVPN-mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -1611,6 +1584,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/PacketTunnel/macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
@@ -1620,7 +1594,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "PacketTunnel-mac/PacketTunnel-mac-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1637,6 +1611,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/PacketTunnel/macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
@@ -1646,7 +1621,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "PacketTunnel-mac/PacketTunnel-mac-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

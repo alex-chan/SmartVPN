@@ -7,10 +7,12 @@
 //
 
 import NetworkExtension
+
+import SwiftyBeaver
 import NEKit
 import Resolver
 import Localize_Swift
-import SwiftyBeaver
+
 
 let log = SwiftyBeaver.self
 
@@ -34,34 +36,10 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
     deinit {
 
-        DDLog.removeAllLoggers()
+        log.removeAllDestinations()
     }
 
-    open class DebugObserverFactory2: ObserverFactory {
-        public override init() {}
 
-        override open func getObserverForProxyServer(_ server: ProxyServer) -> Observer<ProxyServerEvent>? {
-            return DebugProxyServerObserver2()
-        }
-    }
-
-    open class DebugProxyServerObserver2: Observer<ProxyServerEvent> {
-
-        override open func signal(_ event: ProxyServerEvent) {
-//            let mainVC = (UIApplication.shared.keyWindow!.rootViewController as! UINavigationController).topViewController as! MainTableViewController
-            log.info("DebugProxyServerObserver2\(event)")
-            switch event {
-            case .started:
-//                mainVC.status = .CONNECTED
-                log.info("\(event)")
-            case .stopped, .tunnelClosed:
-//                mainVC.status = .DISCONNECTED
-                log.info("\(event)")
-            default: break
-
-            }
-        }
-    }
 
     func getNetworkSetings() -> NEPacketTunnelNetworkSettings {
         // the `tunnelRemoteAddress` is meaningless because we are not creating a tunnel.
@@ -138,7 +116,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
         RuleManager.currentManager = manager
 
-        ObserverFactory.currentFactory = DebugObserverFactory2()
+        ObserverFactory.currentFactory = SmartVPNDebugObserverFactory()
 
         server = GCDHTTPProxyServer(address: IPAddress(fromString: "127.0.0.1"), port: Port(port: 9090))
 
@@ -146,13 +124,13 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
         RawSocketFactory.TunnelProvider = self
 
-        completionHandler(nil)
 
-        self.setTunnelNetworkSettings(getNetworkSetings(), completionHandler: {
+
+        setTunnelNetworkSettings(getNetworkSetings(), completionHandler: {
             [unowned self]  error in
 
             guard error == nil else {
-                DDLogError("Encountered an error setting up the network: \(error!)")
+                log.error("Encountered an error setting up the network: \(error!)")
                 completionHandler(error)
                 return
             }
@@ -177,6 +155,8 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             self.interface.register(stack: tcpStack)
 
             self.interface.start()
+            
+            completionHandler(nil)
         })
 
     }

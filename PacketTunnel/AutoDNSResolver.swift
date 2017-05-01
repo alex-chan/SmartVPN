@@ -8,7 +8,7 @@
 
 import Foundation
 import NEKit
-import SwiftyBeaver
+//import SwiftyBeaver
 
 class AutoVPNDNSResolver: DNSResolverProtocol {
 
