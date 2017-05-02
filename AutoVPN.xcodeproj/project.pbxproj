@@ -20,6 +20,9 @@
 		CB0505D11EB79E5C0000E619 /* TunnelPacketDebugObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0505A71EB7159A0000E619 /* TunnelPacketDebugObserver.swift */; };
 		CB0505D61EB7A2680000E619 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0505D51EB7A2680000E619 /* SwiftyBeaver.framework */; };
 		CB0505D71EB7A2680000E619 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0505D51EB7A2680000E619 /* SwiftyBeaver.framework */; };
+		CB0FC31F1EB8AD200094E03A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF94DA1E7029DE001A99A6 /* Constants.swift */; };
+		CB0FC3251EB8AD350094E03A /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18550F1E7543CA008166F0 /* Errors.swift */; };
+		CB0FC3271EB8AEF80094E03A /* SwiftyBeaver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB0505D51EB7A2680000E619 /* SwiftyBeaver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB1855101E7543CA008166F0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18550F1E7543CA008166F0 /* Errors.swift */; };
 		CB1855111E7543CA008166F0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18550F1E7543CA008166F0 /* Errors.swift */; };
 		CB19F81D1E712E8F008CC0F2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19F81C1E712E8F008CC0F2 /* AboutViewController.swift */; };
@@ -245,6 +248,7 @@
 				CB52344D1EB1037600739CFB /* CryptoSwift.framework in Embed Frameworks */,
 				CB5234571EB1037600739CFB /* Resolver.framework in Embed Frameworks */,
 				CB5234631EB1037600739CFB /* Yaml.framework in Embed Frameworks */,
+				CB0FC3271EB8AEF80094E03A /* SwiftyBeaver.framework in Embed Frameworks */,
 				CB5234451EB1037600739CFB /* Alamofire.framework in Embed Frameworks */,
 				CB5234591EB1037600739CFB /* SnapKit.framework in Embed Frameworks */,
 			);
@@ -285,7 +289,7 @@
 		CB0478561E6FFD9900D35AEE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		CB05059A1EB1086C0000E619 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/NetworkExtension.framework; sourceTree = DEVELOPER_DIR; };
 		CB0505A71EB7159A0000E619 /* TunnelPacketDebugObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelPacketDebugObserver.swift; sourceTree = "<group>"; };
-		CB0505D51EB7A2680000E619 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = SOURCE_ROOT; };
+		CB0505D51EB7A2680000E619 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/Mac/SwiftyBeaver.framework; sourceTree = SOURCE_ROOT; };
 		CB18550F1E7543CA008166F0 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		CB19F8061E7119B3008CC0F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB19F81C1E712E8F008CC0F2 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -1187,8 +1191,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB0505C91EB7258B0000E619 /* TunnelPacketDebugObserver.swift in Sources */,
+				CB0FC3251EB8AD350094E03A /* Errors.swift in Sources */,
 				CB0505C71EB725870000E619 /* AutoDNSResolver.swift in Sources */,
 				CB0505C51EB725830000E619 /* PacketTunnelProvider.swift in Sources */,
+				CB0FC31F1EB8AD200094E03A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
