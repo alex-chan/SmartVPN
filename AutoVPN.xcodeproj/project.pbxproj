@@ -120,6 +120,9 @@
 		CBD85B521E6D429E0049B210 /* Localize_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD85B501E6D42950049B210 /* Localize_Swift.framework */; };
 		CBD85B531E6D429E0049B210 /* Localize_Swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBD85B501E6D42950049B210 /* Localize_Swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBD85B5A1E6D46D40049B210 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBD85B5C1E6D46D40049B210 /* Localizable.strings */; };
+		CBDDDF091EBCA3EF000F090D /* Dotzu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDDDF081EBCA3EF000F090D /* Dotzu.framework */; };
+		CBDDDF101EBCA8C9000F090D /* Dotzu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDDDF081EBCA3EF000F090D /* Dotzu.framework */; };
+		CBDDDF111EBCA8C9000F090D /* Dotzu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBDDDF081EBCA3EF000F090D /* Dotzu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBE3C9D91E61916300ED44E5 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */; };
 		CBE3C9DA1E61916300ED44E5 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBE3C9DE1E6191CD00ED44E5 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602B31E617DC100FCD577 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -214,6 +217,7 @@
 				CBAF94D51E7002DD001A99A6 /* Alamofire.framework in Embed Frameworks */,
 				CBE3C9DE1E6191CD00ED44E5 /* CocoaAsyncSocket.framework in Embed Frameworks */,
 				CBAF94DF1E707266001A99A6 /* SwiftyJSON.framework in Embed Frameworks */,
+				CBDDDF111EBCA8C9000F090D /* Dotzu.framework in Embed Frameworks */,
 				CBE3C9EA1E6191CD00ED44E5 /* Resolver.framework in Embed Frameworks */,
 				CBE3C9E01E6191CD00ED44E5 /* CocoaLumberjack.framework in Embed Frameworks */,
 				CBE3C9DA1E61916300ED44E5 /* SnapKit.framework in Embed Frameworks */,
@@ -370,6 +374,7 @@
 		CBD85B501E6D42950049B210 /* Localize_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Localize_Swift.framework; path = Carthage/Build/iOS/Localize_Swift.framework; sourceTree = SOURCE_ROOT; };
 		CBD85B5D1E6D47080049B210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CBD85B5E1E6D471C0049B210 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CBDDDF081EBCA3EF000F090D /* Dotzu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dotzu.framework; path = Carthage/Build/iOS/Dotzu.framework; sourceTree = SOURCE_ROOT; };
 		CBE3C9D31E618FE300ED44E5 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
 		CBFF59271EAE66D20028E71E /* AutoDNSResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoDNSResolver.swift; sourceTree = "<group>"; };
 		E3C8BC9CBBE115133F0193B3 /* Pods_PacketTunnel_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PacketTunnel_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -382,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5602D01E617DC100FCD577 /* tun2socks.framework in Frameworks */,
+				CBDDDF101EBCA8C9000F090D /* Dotzu.framework in Frameworks */,
 				CBD85B521E6D429E0049B210 /* Localize_Swift.framework in Frameworks */,
 				CB19F8231E7293BF008CC0F2 /* CryptoSwift.framework in Frameworks */,
 				CB94206E1E804AB400306BB7 /* StoreKit.framework in Frameworks */,
@@ -450,6 +456,7 @@
 				CBAF94E21E7074B5001A99A6 /* NetworkExtension.framework in Frameworks */,
 				CB5602C11E617DC100FCD577 /* CocoaLumberjack.framework in Frameworks */,
 				CB5234171EB0ED8900739CFB /* SwiftyBeaver.framework in Frameworks */,
+				CBDDDF091EBCA3EF000F090D /* Dotzu.framework in Frameworks */,
 				CB5602BF1E617DC100FCD577 /* CocoaAsyncSocket.framework in Frameworks */,
 				CB5602C51E617DC100FCD577 /* lwip.framework in Frameworks */,
 				CB5602CF1E617DC100FCD577 /* Sodium.framework in Frameworks */,
@@ -664,6 +671,7 @@
 		CB9E15771E540A5B00531821 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CBDDDF081EBCA3EF000F090D /* Dotzu.framework */,
 				CB94206D1E804AB400306BB7 /* StoreKit.framework */,
 				CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */,
 				CB5234151EB0ED8800739CFB /* SwiftyBeaver.framework */,

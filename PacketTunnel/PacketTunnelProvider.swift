@@ -12,7 +12,7 @@ import SwiftyBeaver
 import NEKit
 import Resolver
 import Localize_Swift
-
+import Dotzu
 
 let log = SwiftyBeaver.self
 
@@ -31,6 +31,10 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         log.addDestination(console)
         log.addDestination(file)
         log.addDestination(cloud)
+        
+        #if DEBUG
+            Dotzu.sharedManager.enable()
+        #endif
 
     }
 
@@ -120,11 +124,12 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
         server = GCDHTTPProxyServer(address: IPAddress(fromString: "127.0.0.1"), port: Port(port: 9090))
 
+        Logger.info("GCDHTTPProxyServer server.start")
         try! server.start()
 
         RawSocketFactory.TunnelProvider = self
 
-
+        Logger.info("setTunnelNetworkSettings")
 
         setTunnelNetworkSettings(getNetworkSetings(), completionHandler: {
             [unowned self]  error in
@@ -151,11 +156,12 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             tcpStack.proxyServer = self.server
 
             self.interface.register(stack: dnsServer)
-            self.interface.register(stack: UDPDirectStack())
+//            self.interface.register(stack: UDPDirectStack())
             self.interface.register(stack: tcpStack)
-
-            self.interface.start()
             
+            Logger.info("interface started")
+            self.interface.start()
+            Logger.info("completionHandler")
             completionHandler(nil)
         })
 

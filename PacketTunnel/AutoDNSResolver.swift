@@ -9,6 +9,7 @@
 import Foundation
 import NEKit
 //import SwiftyBeaver
+import Dotzu
 
 class AutoVPNDNSResolver: DNSResolverProtocol {
 
@@ -16,7 +17,9 @@ class AutoVPNDNSResolver: DNSResolverProtocol {
 
     public func resolve(session: DNSSession) {
         let googleIP = "61.91.161.217"
-
+        
+        Logger.info("AutoVPNDNSResolver resolve")
+        
         for query in session.requestMessage.queries {
             log.debug("DNS Query:\(query.name)")
             if query.name.contains("google") {
