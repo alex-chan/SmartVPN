@@ -12,7 +12,7 @@ import SwiftyBeaver
 import NEKit
 import Resolver
 import Localize_Swift
-import Dotzu
+//import Dotzu
 
 let log = SwiftyBeaver.self
 
@@ -26,15 +26,15 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
         let console = ConsoleDestination()  // log to Xcode Console
         let file = FileDestination()  // log to default swiftybeaver.log file
-        let cloud = SBPlatformDestination(appID: "dGP8WW", appSecret: "c0Yboblgojpz7lvrmZvpnvzMhvsbovkv", encryptionKey: "e2J6bldyrne2ieOxtvhpbouebFu4sPr4") // to cloud
+//        let cloud = SBPlatformDestination(appID: "dGP8WW", appSecret: "c0Yboblgojpz7lvrmZvpnvzMhvsbovkv", encryptionKey: "e2J6bldyrne2ieOxtvhpbouebFu4sPr4") // to cloud
 
         log.addDestination(console)
         log.addDestination(file)
-        log.addDestination(cloud)
-        
-        #if DEBUG
-            Dotzu.sharedManager.enable()
-        #endif
+//        log.addDestination(cloud)
+//
+//        #if DEBUG
+//            Dotzu.sharedManager.enable()
+//        #endif
 
     }
 
@@ -114,7 +114,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         let chinaRule =  CountryRule(countryCode: "CN", match: true, adapterFactory: directAdapterFactory)
         let appleDomains = DomainListRule(adapterFactory: directAdapterFactory, criteria: [DomainListRule.MatchCriterion.suffix(".icloud-content.com"), DomainListRule.MatchCriterion.suffix(".apple.com"), DomainListRule.MatchCriterion.suffix(".icloud.com")])
 
-        let allRule = AllRule(adapterFactory: directAdapterFactory)
+        let allRule = AllRule(adapterFactory: ssAdapterFactory)
 
         let manager = RuleManager(fromRules: [appleDomains, chinaRule, allRule], appendDirect: true)
 
@@ -124,18 +124,21 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
         server = GCDHTTPProxyServer(address: IPAddress(fromString: "127.0.0.1"), port: Port(port: 9090))
 
-        Logger.info("GCDHTTPProxyServer server.start")
+//        Logger.info("GCDHTTPProxyServer server.start")
+        log.info("sb")
+        print("SB print")
         try! server.start()
 
         RawSocketFactory.TunnelProvider = self
 
-        Logger.info("setTunnelNetworkSettings")
+//        Logger.info("setTunnelNetworkSettings")
 
+        
         setTunnelNetworkSettings(getNetworkSetings(), completionHandler: {
             [unowned self]  error in
 
             guard error == nil else {
-                log.error("Encountered an error setting up the network: \(error!)")
+//                log.error("Encountered an error setting up the network: \(error!)")
                 completionHandler(error)
                 return
             }
@@ -145,10 +148,10 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             let fakeIPPool = try! IPPool(range: IPRange(startIP: IPAddress(fromString: "172.169.1.0")!, endIP: IPAddress(fromString: "172.169.255.0")!))
 
             let dnsServer = DNSServer(address: IPAddress(fromString: "172.169.0.1")!, port: Port(port: 53), fakeIPPool: fakeIPPool)
-//            let resolver = UDPDNSResolver(address: IPAddress(fromString: "114.114.114.114")!, port: Port(port: 53))
-            let resolver2 = AutoVPNDNSResolver()
-            dnsServer.registerResolver(resolver2)
-//            dnsServer.registerResolver(resolver)
+            let resolver = UDPDNSResolver(address: IPAddress(fromString: "114.114.114.114")!, port: Port(port: 53))
+//            let resolver2 = AutoVPNDNSResolver()
+//            dnsServer.registerResolver(resolver2)
+            dnsServer.registerResolver(resolver)
 
             DNSServer.currentServer = dnsServer
 
@@ -156,13 +159,13 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             tcpStack.proxyServer = self.server
 
             self.interface.register(stack: dnsServer)
-//            self.interface.register(stack: UDPDirectStack())
+            self.interface.register(stack: UDPDirectStack()) 
             self.interface.register(stack: tcpStack)
             
-            Logger.info("interface started")
+//            Logger.info("interface started")
             self.interface.start()
-            Logger.info("completionHandler")
-            completionHandler(nil)
+//            Logger.info("completionHandler")
+                      completionHandler(nil)
         })
 
     }
