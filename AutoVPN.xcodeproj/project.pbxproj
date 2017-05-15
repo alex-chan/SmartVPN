@@ -62,7 +62,6 @@
 		CB5234511EB1037600739CFB /* lwip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342A1EB1021E00739CFB /* lwip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB5234521EB1037600739CFB /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342B1EB1021E00739CFB /* MMDB.framework */; };
 		CB5234531EB1037600739CFB /* MMDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342B1EB1021E00739CFB /* MMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CB5234541EB1037600739CFB /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342C1EB1021E00739CFB /* NEKit.framework */; };
 		CB5234551EB1037600739CFB /* NEKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342C1EB1021E00739CFB /* NEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB5234561EB1037600739CFB /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342D1EB1021E00739CFB /* Resolver.framework */; };
 		CB5234571EB1037600739CFB /* Resolver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB52342D1EB1021E00739CFB /* Resolver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -89,13 +88,14 @@
 		CB5602D11E617DC100FCD577 /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BC1E617DC100FCD577 /* tun2socks.framework */; };
 		CB5602D21E617DC100FCD577 /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BD1E617DC100FCD577 /* Yaml.framework */; };
 		CB5602D31E617DC100FCD577 /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5602BD1E617DC100FCD577 /* Yaml.framework */; };
+		CB7EF9771ECA1656002E9389 /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB90DD21ECA0CCD001A87CC /* NEKit.framework */; };
+		CB7EF9781ECA1656002E9389 /* NEKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBB90DD21ECA0CCD001A87CC /* NEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB8041331E530CE100C451F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041321E530CE100C451F0 /* AppDelegate.swift */; };
 		CB80413A1E530CE200C451F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8041381E530CE200C451F0 /* Main.storyboard */; };
 		CB80413C1E530CE200C451F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB80413B1E530CE200C451F0 /* Assets.xcassets */; };
 		CB80413F1E530CE200C451F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB80413D1E530CE200C451F0 /* LaunchScreen.storyboard */; };
 		CB80414A1E530CE200C451F0 /* AutoVPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041491E530CE200C451F0 /* AutoVPNTests.swift */; };
 		CB8041551E530CE200C451F0 /* AutoVPNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8041541E530CE200C451F0 /* AutoVPNUITests.swift */; };
-		CB9276861E73B31200C2863C /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9276851E73B31200C2863C /* NEKit.framework */; };
 		CB94206E1E804AB400306BB7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB94206D1E804AB400306BB7 /* StoreKit.framework */; };
 		CB9420711E804FE100306BB7 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9420701E804FE100306BB7 /* IAPHelper.swift */; };
 		CB9420751E81056F00306BB7 /* IAPProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9420741E81056F00306BB7 /* IAPProducts.swift */; };
@@ -113,6 +113,7 @@
 		CBAF94DF1E707266001A99A6 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBAF94D81E70223A001A99A6 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBAF94E11E70728E001A99A6 /* ToastSwiftFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBAF94D61E701257001A99A6 /* ToastSwiftFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBAF94E21E7074B5001A99A6 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */; };
+		CBB90DE41ECA12A1001A87CC /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB90DD21ECA0CCD001A87CC /* NEKit.framework */; };
 		CBC0E0511E5461C800323323 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBC0E0481E5461C800323323 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBC0E0841E54BDAA00323323 /* PacketTunnel-mac.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBC0E07B1E54BDAA00323323 /* PacketTunnel-mac.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBD5636C1E63C2B6008F8DD4 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */; };
@@ -138,6 +139,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CB7EF9791ECA1656002E9389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB90DC71ECA0CCD001A87CC /* NEKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 36C48D4C1CF88DED0071804F;
+			remoteInfo = "NEKit-iOS";
+		};
 		CB8041461E530CE200C451F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB8041271E530CE100C451F0 /* Project object */;
@@ -152,40 +160,47 @@
 			remoteGlobalIDString = CB80412E1E530CE100C451F0;
 			remoteInfo = AutoVPN;
 		};
-		CB9E14FA1E5406BF00531821 /* PBXContainerItemProxy */ = {
+		CBB90DCF1ECA0CCD001A87CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+			containerPortal = CBB90DC71ECA0CCD001A87CC /* NEKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 36463A301CDCD5EB0040579C;
 			remoteInfo = "NEKit-macOS";
 		};
-		CB9E14FC1E5406BF00531821 /* PBXContainerItemProxy */ = {
+		CBB90DD11ECA0CCD001A87CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+			containerPortal = CBB90DC71ECA0CCD001A87CC /* NEKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 36C48D4D1CF88DED0071804F;
 			remoteInfo = "NEKit-iOS";
 		};
-		CB9E14FE1E5406BF00531821 /* PBXContainerItemProxy */ = {
+		CBB90DD31ECA0CCD001A87CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+			containerPortal = CBB90DC71ECA0CCD001A87CC /* NEKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 36A719981D5EEB4900DC35F5;
 			remoteInfo = NEKitDemo;
 		};
-		CB9E15001E5406BF00531821 /* PBXContainerItemProxy */ = {
+		CBB90DD51ECA0CCD001A87CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+			containerPortal = CBB90DC71ECA0CCD001A87CC /* NEKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 362347131D7D44E700A047DE;
 			remoteInfo = "NEKitTest-macOS";
 		};
-		CB9E15021E5406BF00531821 /* PBXContainerItemProxy */ = {
+		CBB90DD71ECA0CCD001A87CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+			containerPortal = CBB90DC71ECA0CCD001A87CC /* NEKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 362347221D7D458E00A047DE;
 			remoteInfo = "NEKitTests-iOS";
+		};
+		CBB90DDB1ECA0D05001A87CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB90DC71ECA0CCD001A87CC /* NEKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 36C48D4C1CF88DED0071804F;
+			remoteInfo = "NEKit-iOS";
 		};
 		CBC0E04F1E5461C800323323 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -220,6 +235,7 @@
 				CBE3C9E01E6191CD00ED44E5 /* CocoaLumberjack.framework in Embed Frameworks */,
 				CBE3C9DA1E61916300ED44E5 /* SnapKit.framework in Embed Frameworks */,
 				CBE3C9E21E6191CD00ED44E5 /* CocoaLumberjackSwift.framework in Embed Frameworks */,
+				CB7EF9781ECA1656002E9389 /* NEKit.framework in Embed Frameworks */,
 				CBD85B531E6D429E0049B210 /* Localize_Swift.framework in Embed Frameworks */,
 				CBAF94E11E70728E001A99A6 /* ToastSwiftFramework.framework in Embed Frameworks */,
 				CBE3C9F01E6191CD00ED44E5 /* tun2socks.framework in Embed Frameworks */,
@@ -338,7 +354,6 @@
 		CB8041501E530CE200C451F0 /* AutoVPNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoVPNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8041541E530CE200C451F0 /* AutoVPNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoVPNUITests.swift; sourceTree = "<group>"; };
 		CB8041561E530CE200C451F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB9276851E73B31200C2863C /* NEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NEKit.framework; path = Carthage/Build/iOS/NEKit.framework; sourceTree = SOURCE_ROOT; };
 		CB94206D1E804AB400306BB7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		CB9420701E804FE100306BB7 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		CB9420731E80CAA500306BB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -349,13 +364,13 @@
 		CB9E14E91E54068300531821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB9E14EC1E54068300531821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB9E14EE1E54068300531821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NEKit.xcodeproj; path = Carthage/Checkouts/NEKit/NEKit.xcodeproj; sourceTree = "<group>"; };
 		CB9E15981E54226900531821 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		CB9FDDC51E5BDE7000DBCDE6 /* AutoVPNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoVPNManager.swift; sourceTree = "<group>"; };
 		CBAF94D31E6FFF1C001A99A6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		CBAF94D61E701257001A99A6 /* ToastSwiftFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToastSwiftFramework.framework; path = Carthage/Build/iOS/ToastSwiftFramework.framework; sourceTree = SOURCE_ROOT; };
 		CBAF94D81E70223A001A99A6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
 		CBAF94DA1E7029DE001A99A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CBB90DC71ECA0CCD001A87CC /* NEKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NEKit.xcodeproj; path = Carthage/Checkouts/NEKit/NEKit.xcodeproj; sourceTree = "<group>"; };
 		CBC0E0481E5461C800323323 /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC0E04B1E5461C800323323 /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
 		CBC0E04C1E5461C800323323 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
@@ -397,13 +412,13 @@
 				CBE3C9D91E61916300ED44E5 /* SnapKit.framework in Frameworks */,
 				CB5602C21E617DC100FCD577 /* CocoaLumberjackSwift.framework in Frameworks */,
 				CB5602BE1E617DC100FCD577 /* CocoaAsyncSocket.framework in Frameworks */,
-				CB9276861E73B31200C2863C /* NEKit.framework in Frameworks */,
 				CB5602D21E617DC100FCD577 /* Yaml.framework in Frameworks */,
 				CBE3C9E51E6191CD00ED44E5 /* MMDB.framework in Frameworks */,
 				CBE3C9E31E6191CD00ED44E5 /* lwip.framework in Frameworks */,
 				CBE3C9DF1E6191CD00ED44E5 /* CocoaLumberjack.framework in Frameworks */,
 				CB0478571E6FFD9900D35AEE /* Alamofire.framework in Frameworks */,
 				CB5602CE1E617DC100FCD577 /* Sodium.framework in Frameworks */,
+				CB7EF9771ECA1656002E9389 /* NEKit.framework in Frameworks */,
 				16CEADC013BC465BA1E09EFC /* Pods_AutoVPN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,7 +444,6 @@
 				CB0505A01EB109980000E619 /* NetworkExtension.framework in Frameworks */,
 				CB52344A1EB1037600739CFB /* CocoaLumberjackSwift.framework in Frameworks */,
 				CB52345A1EB1037600739CFB /* Sodium.framework in Frameworks */,
-				CB5234541EB1037600739CFB /* NEKit.framework in Frameworks */,
 				CB52344E1EB1037600739CFB /* Localize_Swift.framework in Frameworks */,
 				CB52345E1EB1037600739CFB /* SwiftyJSON.framework in Frameworks */,
 				CB5234521EB1037600739CFB /* MMDB.framework in Frameworks */,
@@ -450,6 +464,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB90DE41ECA12A1001A87CC /* NEKit.framework in Frameworks */,
 				CB5602C71E617DC100FCD577 /* MMDB.framework in Frameworks */,
 				CBAF94E21E7074B5001A99A6 /* NetworkExtension.framework in Frameworks */,
 				CB5602C11E617DC100FCD577 /* CocoaLumberjack.framework in Frameworks */,
@@ -523,7 +538,7 @@
 		CB8041261E530CE100C451F0 = {
 			isa = PBXGroup;
 			children = (
-				CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */,
+				CBB90DC71ECA0CCD001A87CC /* NEKit.xcodeproj */,
 				CBD563711E63C5C6008F8DD4 /* Resources */,
 				CB8041311E530CE100C451F0 /* AutoVPN */,
 				CB8041481E530CE200C451F0 /* AutoVPNTests */,
@@ -628,18 +643,6 @@
 			path = "AutoVPN-mac";
 			sourceTree = "<group>";
 		};
-		CB9E14F31E5406BE00531821 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CB9E14FB1E5406BF00531821 /* NEKit.framework */,
-				CB9E14FD1E5406BF00531821 /* NEKit.framework */,
-				CB9E14FF1E5406BF00531821 /* NEKitDemo.app */,
-				CB9E15011E5406BF00531821 /* NEKitTest-macOS.xctest */,
-				CB9E15031E5406BF00531821 /* NEKitTests-iOS.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		CB9E15301E5408F200531821 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -671,7 +674,6 @@
 				CB94206D1E804AB400306BB7 /* StoreKit.framework */,
 				CBD5636B1E63C2B6008F8DD4 /* NetworkExtension.framework */,
 				CB5234151EB0ED8800739CFB /* SwiftyBeaver.framework */,
-				CB9276851E73B31200C2863C /* NEKit.framework */,
 				CB19F8221E7293BF008CC0F2 /* CryptoSwift.framework */,
 				CBAF94D81E70223A001A99A6 /* SwiftyJSON.framework */,
 				CBAF94D61E701257001A99A6 /* ToastSwiftFramework.framework */,
@@ -690,6 +692,18 @@
 				CB5602BD1E617DC100FCD577 /* Yaml.framework */,
 			);
 			path = iOS;
+			sourceTree = "<group>";
+		};
+		CBB90DC81ECA0CCD001A87CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBB90DD01ECA0CCD001A87CC /* NEKit.framework */,
+				CBB90DD21ECA0CCD001A87CC /* NEKit.framework */,
+				CBB90DD41ECA0CCD001A87CC /* NEKitDemo.app */,
+				CBB90DD61ECA0CCD001A87CC /* NEKitTest-macOS.xctest */,
+				CBB90DD81ECA0CCD001A87CC /* NEKitTests-iOS.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CBC0E0491E5461C800323323 /* PacketTunnel */ = {
@@ -734,7 +748,7 @@
 				CB80412D1E530CE100C451F0 /* Resources */,
 				CB9E14D91E54053A00531821 /* Embed Frameworks */,
 				CBC0E0581E5461C800323323 /* Embed App Extensions */,
-				CB9E14CB1E53F0B900531821 /* ShellScript */,
+				CB9E14CB1E53F0B900531821 /* Run Script */,
 				D914FB05DFACC49692202A86 /* [CP] Embed Pods Frameworks */,
 				90EF010BF27DD9799ADED7E6 /* [CP] Copy Pods Resources */,
 				CB14D1D81E72E827005D2CF8 /* [CP] Copy Carthage Frameworks */,
@@ -743,6 +757,7 @@
 			);
 			dependencies = (
 				CBC0E0501E5461C800323323 /* PBXTargetDependency */,
+				CB7EF97A1ECA1656002E9389 /* PBXTargetDependency */,
 			);
 			name = AutoVPN;
 			productName = AutoVPN;
@@ -811,11 +826,13 @@
 			buildPhases = (
 				CBC0E0441E5461C800323323 /* Sources */,
 				CBC0E0451E5461C800323323 /* Frameworks */,
+				CB7EF9701ECA1540002E9389 /* Run Script */,
 				CBC0E0461E5461C800323323 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CBB90DDC1ECA0D05001A87CC /* PBXTargetDependency */,
 			);
 			name = PacketTunnel;
 			productName = PacketTunnel;
@@ -929,14 +946,15 @@
 			knownRegions = (
 				en,
 				Base,
+				English,
 			);
 			mainGroup = CB8041261E530CE100C451F0;
 			productRefGroup = CB8041301E530CE100C451F0 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = CB9E14F31E5406BE00531821 /* Products */;
-					ProjectRef = CB9E14F21E5406BE00531821 /* NEKit.xcodeproj */;
+					ProductGroup = CBB90DC81ECA0CCD001A87CC /* Products */;
+					ProjectRef = CBB90DC71ECA0CCD001A87CC /* NEKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -952,39 +970,39 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		CB9E14FB1E5406BF00531821 /* NEKit.framework */ = {
+		CBB90DD01ECA0CCD001A87CC /* NEKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = NEKit.framework;
-			remoteRef = CB9E14FA1E5406BF00531821 /* PBXContainerItemProxy */;
+			remoteRef = CBB90DCF1ECA0CCD001A87CC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CB9E14FD1E5406BF00531821 /* NEKit.framework */ = {
+		CBB90DD21ECA0CCD001A87CC /* NEKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = NEKit.framework;
-			remoteRef = CB9E14FC1E5406BF00531821 /* PBXContainerItemProxy */;
+			remoteRef = CBB90DD11ECA0CCD001A87CC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CB9E14FF1E5406BF00531821 /* NEKitDemo.app */ = {
+		CBB90DD41ECA0CCD001A87CC /* NEKitDemo.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = NEKitDemo.app;
-			remoteRef = CB9E14FE1E5406BF00531821 /* PBXContainerItemProxy */;
+			remoteRef = CBB90DD31ECA0CCD001A87CC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CB9E15011E5406BF00531821 /* NEKitTest-macOS.xctest */ = {
+		CBB90DD61ECA0CCD001A87CC /* NEKitTest-macOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "NEKitTest-macOS.xctest";
-			remoteRef = CB9E15001E5406BF00531821 /* PBXContainerItemProxy */;
+			remoteRef = CBB90DD51ECA0CCD001A87CC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CB9E15031E5406BF00531821 /* NEKitTests-iOS.xctest */ = {
+		CBB90DD81ECA0CCD001A87CC /* NEKitTests-iOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "NEKitTests-iOS.xctest";
-			remoteRef = CB9E15021E5406BF00531821 /* PBXContainerItemProxy */;
+			remoteRef = CBB90DD71ECA0CCD001A87CC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1093,7 +1111,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ToastSwiftFramework.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/tun2socks.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Yaml.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/NEKit.framework",
 			);
 			name = "[CP] Copy Carthage Frameworks";
 			outputPaths = (
@@ -1102,14 +1119,28 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
-		CB9E14CB1E53F0B900531821 /* ShellScript */ = {
+		CB7EF9701ECA1540002E9389 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/NEKit.framework",
 			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		CB9E14CB1E53F0B900531821 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1205,6 +1236,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CB7EF97A1ECA1656002E9389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NEKit-iOS";
+			targetProxy = CB7EF9791ECA1656002E9389 /* PBXContainerItemProxy */;
+		};
 		CB8041471E530CE200C451F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CB80412E1E530CE100C451F0 /* AutoVPN */;
@@ -1214,6 +1250,11 @@
 			isa = PBXTargetDependency;
 			target = CB80412E1E530CE100C451F0 /* AutoVPN */;
 			targetProxy = CB8041511E530CE200C451F0 /* PBXContainerItemProxy */;
+		};
+		CBB90DDC1ECA0D05001A87CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NEKit-iOS";
+			targetProxy = CBB90DDB1ECA0D05001A87CC /* PBXContainerItemProxy */;
 		};
 		CBC0E0501E5461C800323323 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

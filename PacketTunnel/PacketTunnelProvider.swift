@@ -25,6 +25,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         super.init()
 
         let console = ConsoleDestination()  // log to Xcode Console
+        console.useNSLog = true
         let file = FileDestination()  // log to default swiftybeaver.log file
 //        let cloud = SBPlatformDestination(appID: "dGP8WW", appSecret: "c0Yboblgojpz7lvrmZvpnvzMhvsbovkv", encryptionKey: "e2J6bldyrne2ieOxtvhpbouebFu4sPr4") // to cloud
 
@@ -111,22 +112,32 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         let directAdapterFactory = DirectAdapterFactory()
 //        let httpAdapterFactory = HTTPAdapterFactory(serverHost: kProxyServer, serverPort: kProxyPort, auth: nil)
 
-        let chinaRule =  CountryRule(countryCode: "CN", match: true, adapterFactory: directAdapterFactory)
-        let appleDomains = DomainListRule(adapterFactory: directAdapterFactory, criteria: [DomainListRule.MatchCriterion.suffix(".icloud-content.com"), DomainListRule.MatchCriterion.suffix(".apple.com"), DomainListRule.MatchCriterion.suffix(".icloud.com")])
-
-        let allRule = AllRule(adapterFactory: ssAdapterFactory)
-
-        let manager = RuleManager(fromRules: [appleDomains, chinaRule, allRule], appendDirect: true)
+//        let chinaRule =  CountryRule(countryCode: "CN", match: true, adapterFactory: directAdapterFactory)
+//        let appleDomains = DomainListRule(adapterFactory: directAdapterFactory, criteria: [DomainListRule.MatchCriterion.suffix(".icloud-content.com"), DomainListRule.MatchCriterion.suffix(".apple.com"), DomainListRule.MatchCriterion.suffix(".icloud.com")])
+//
+//        let allRule = AllRule(adapterFactory: ssAdapterFactory)
+//
+//        let manager = RuleManager(fromRules: [appleDomains, chinaRule, allRule], appendDirect: true)
+        
+        let testRules = DomainListRule(adapterFactory: ssAdapterFactory, criteria: [
+                DomainListRule.MatchCriterion.suffix("bing.com"),
+                DomainListRule.MatchCriterion.suffix("baidu.com"),
+                DomainListRule.MatchCriterion.suffix("google.com"),
+                DomainListRule.MatchCriterion.suffix("wikipedia.org")
+            ])
+        
+        let manager = RuleManager(fromRules: [testRules], appendDirect: true)
 
         RuleManager.currentManager = manager
 
-        ObserverFactory.currentFactory = SmartVPNDebugObserverFactory()
+        ObserverFactory.currentFactory = DebugObserverFactory()
 
         server = GCDHTTPProxyServer(address: IPAddress(fromString: "127.0.0.1"), port: Port(port: 9090))
 
 //        Logger.info("GCDHTTPProxyServer server.start")
-        log.info("sb")
-        print("SB print")
+        NSLog("sb NSLog")
+        log.info("sb log")
+        print("sb print")
         try! server.start()
 
         RawSocketFactory.TunnelProvider = self
@@ -149,9 +160,9 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
             let dnsServer = DNSServer(address: IPAddress(fromString: "172.169.0.1")!, port: Port(port: 53), fakeIPPool: fakeIPPool)
             let resolver = UDPDNSResolver(address: IPAddress(fromString: "114.114.114.114")!, port: Port(port: 53))
-//            let resolver2 = AutoVPNDNSResolver()
-//            dnsServer.registerResolver(resolver2)
-            dnsServer.registerResolver(resolver)
+            let resolver2 = AutoVPNDNSResolver()
+            dnsServer.registerResolver(resolver2)
+//            dnsServer.registerResolver(resolver)
 
             DNSServer.currentServer = dnsServer
 
@@ -159,7 +170,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             tcpStack.proxyServer = self.server
 
             self.interface.register(stack: dnsServer)
-            self.interface.register(stack: UDPDirectStack()) 
+//            self.interface.register(stack: UDPDirectStack())
             self.interface.register(stack: tcpStack)
             
 //            Logger.info("interface started")

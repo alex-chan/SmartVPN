@@ -36,32 +36,34 @@ open class SmartVPNDebugObserverFactory: ObserverFactory {
 open class DebugProxyServerObserver: Observer<ProxyServerEvent> {
     
     override open func signal(_ event: ProxyServerEvent) {
-//        log.info("DebugProxyServerObserver\(event)")
+        log.info("DebugProxyServerObserver\(event)")
     }
 }
 
 
 open class DebugRuleManagerObserver: Observer<RuleMatchEvent> {
     override open func signal(_ event: RuleMatchEvent) {
-//        log.info("DebugRuleManagerObserver:\(event)")
+        log.info("DebugRuleManagerObserver:\(event)")
     }
 }
 
 
 open class DebugTunnelObserver: Observer<TunnelEvent> {
     override open func signal(_ event: TunnelEvent) {
-//        log.info("DebugTunnelObserver:\(event)")
+        log.info("DebugTunnelObserver:\(event)")
     }
 }
 
 open class DebugProxySocketObserver: Observer<ProxySocketEvent> {
     override open func signal(_ event: ProxySocketEvent) {
-//        log.info("DebugProxySocketObserver:\(event)")
+        log.info("DebugProxySocketObserver:\(event)")
+
     }
 }
 
 open class DebugAdapterSocketObserver: Observer<AdapterSocketEvent> {
     override open func signal(_ event: AdapterSocketEvent) {
-//        log.info("DebugAdapterSocketObserver:\(event)")
+        log.info("DebugAdapterSocketObserver:\(event)")
+
     }
 }
