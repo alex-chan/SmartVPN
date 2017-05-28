@@ -22,17 +22,17 @@ class MainTableViewController: UITableViewController {
     @IBOutlet weak var mainButton: UIButton!
     @IBOutlet weak var actionCell: UITableViewCell!
     @IBOutlet weak var statusLabel: UILabel!
-    @IBOutlet weak var bannerAd: GADBannerView!
+//    @IBOutlet weak var bannerAd: GADBannerView!
 
     let manager = AutoVPNManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bannerAd.isHidden  = true
-        bannerAd.adUnitID = kAdUnitId
-        bannerAd.rootViewController = self
-        bannerAd.load(GADRequest())
+//        bannerAd.isHidden  = true
+//        bannerAd.adUnitID = kAdUnitId
+//        bannerAd.rootViewController = self
+//        bannerAd.load(GADRequest())
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -67,7 +67,7 @@ class MainTableViewController: UITableViewController {
                 self.view.makeToast(error.localizedDescription, duration:2.0, position: .center)
             }
 
-            self.bannerAd.isHidden = false
+//            self.bannerAd.isHidden = false
 
         })
     }

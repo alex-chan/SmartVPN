@@ -3,3 +3,6 @@
 import UIKit
 
 let items = [".a", ".b", ".c"]
+
+
+let r = "abcdef".contains("bc")
